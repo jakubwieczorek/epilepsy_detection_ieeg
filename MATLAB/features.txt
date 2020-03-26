@@ -1,0 +1,15 @@
+1) high pick (needle) in intracranial electroencephalography (iEEG)
+2) during seizure, iEEG can get back to very small value (P specifically) and after around 15s it gets back to really high value.
+
+Pattern in patient 2; 230h, 233h:
+a) very high pick in the middle of a seizure especially in a power signal around 1e6pW, in a signal 5/10 times higher then average, so 1000uV
+b) from envelope seizure can be faster detected, in power first half of a seizure is almost like a normal signal
+c) during seizure, iEEG can get back to very small value (P specifically) and after around 15s it gets back to really high value.
+d) seizure lasts for 80s
+e) 1,5 min after seizure iEEG is higher than usually around 2 times for 2/3 minutes
+
+Pattern in patient 2, 1h
+a) signal does not exceed 100uV, power 500pW
+b) no picks, like a noise
+
+
