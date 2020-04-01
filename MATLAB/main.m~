@@ -1,4 +1,4 @@
-clearvars -except keepVariables histogram_values_group_ictal histogram_values_group_both histogram_values_group_interictal counter
+clearvars -except keepVariables histogram_values_group counter
 time='18'; % hours
 patient='08';
 % 0 is the first one: histogram number for particular seizure
@@ -9,13 +9,14 @@ patient='08';
 % histogram_number=5; 
 % seizure_number=2;
 
-histogram_number=2; % to increase by on every launch 
+histogram_number=1; % to increase by on every launch 
 seizure_number=1;   % can be constant
-histogram_group_pop_up=true; % first run must be false
+histogram_group_pop_up=false; % first run must be false
 
-histogram_number_interictal=2; % to increase by on every launch 
+histogram_number_interictal=1; % to increase by on every launch 
 interictal_number=1;   % can be constant
-lbp_length = 6;
+
+
 
 exp_name =strcat('ID', patient, '_', time, 'h');
 
@@ -45,38 +46,34 @@ seizure_end_s  =ceil(mod(seizure_end(  number_of_seizures), 3600));
 ictal_begin=seizure_begin_s*fs; 
 ictal_end  =seizure_end_s  *fs;
 % X elemnets
-interactal_begin=[1,           ictal_end']';
+interactal_begin=[0,           ictal_end']';
 interactal_end  =[ictal_begin', numel(y)]';
 
 number_of_histograms_ictal=(ictal_end-ictal_begin)/fs
 number_of_histograms_intericatl=(interactal_end-interactal_begin)/fs
 
 %% histograms
+lbp_length = 8;
 
 % 1 second of a seizure
 histogram_number=histogram_number-1;
+
+% 1 second of a seizure on for example 44th ictal second
 y_ictal = y(ictal_begin(seizure_number) +  histogram_number   *fs : ...
             ictal_begin(seizure_number) + (histogram_number+1)*fs);
-[histogram_values, lbp_values]=calculate_histogram(y_ictal, lbp_length);
 
-% 1 second of an interictal period
-histogram_number_interictal=histogram_number_interictal-1;
-y_interictal = y(interactal_begin(interictal_number) +  histogram_number_interictal   *fs : ...
-                 interactal_begin(interictal_number) + (histogram_number_interictal+1)*fs);
-[histogram_values_interictal, lbp_values_interictal]=calculate_histogram(y_interictal, lbp_length);
+[histogram_values, lbp_values]=calculate_histogram(y_ictal, lbp_length);
 
 if histogram_group_pop_up == true 
     counter=counter+1;
 else
     counter=1;
-    clearvars histogram_values_group_ictal histogram_values_group_interictal histogram_values_group_both
+    clearvars histogram_values_group
 end
 
-histogram_values_group_ictal(counter, :)     =histogram_values;
-histogram_values_group_interictal(counter, :)=histogram_values_interictal;
-histogram_values_group_both(2*counter-1, :)  =histogram_values;
-histogram_values_group_both(2*counter, :)    =histogram_values_interictal;
-
+histogram_values_group_ictal(counter, :)=histogram_values;
+histogram_values_group_interictal(counter, :)=histogram_values;
+histogram_values_group_both(counter, :)=histogram_values;
 
 % figure(1)
 % hold on
@@ -88,10 +85,10 @@ histogram_values_group_both(2*counter, :)    =histogram_values_interictal;
 % hold off
 
 figure(2)
-bar(histogram_values_group_ictal')
+bar(histogram_values_group')
 xlabel('LBP value')
 ylabel('Number of occurences')
-title('inctal')
+title('group bar')
 legend()
 
 % figure(3)
@@ -103,17 +100,17 @@ legend()
 % hold off
 
 figure(4)
-bar(histogram_values_group_interictal')
+bar(histogram_values_group')
 xlabel('LBP value')
 ylabel('Number of occurences')
-title('interictal')
+title('group bar')
 legend()
 
 figure(5)
-bar(histogram_values_group_both')
+bar(histogram_values_group')
 xlabel('LBP value')
 ylabel('Number of occurences')
-title('both')
+title('group bar')
 legend()
 
 % so we have N/fs histograms and one histogram is generated every second

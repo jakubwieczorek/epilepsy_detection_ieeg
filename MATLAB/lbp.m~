@@ -1,7 +1,7 @@
 clear all;
 time='233'; % hours
 patient='02';
-seizure_number=-1; % different than -1 perform some operation on seizure
+seizure_number=-1; % -1
 
 exp_name =strcat('ID', patient, '_', time, 'h');
 title_name =strcat('ID', patient, '\_', time, 'h');
@@ -15,15 +15,12 @@ y = EEG(1, :);                           % get the first channel
 N = length(y);                           % signal length
 t1 = (0:N-1)/fs;                         % time vector usually 3600 seconds
 
-% seizure_begin_* and end_* are vectors with all seizures for the patient
 seizure_begin_h = ceil(seizure_begin/3600);
 seizure_end_h = ceil(seizure_end/3600);
 
 seizure_begin_s = ceil(mod(seizure_begin, 3600));
 seizure_end_s = ceil(mod(seizure_end, 3600));
 
-% here extract seizure the seizure which is in the 'time' range for example
-% 233 not 230, because 230 is for file 230...may
 % if some operation on the seizure later on
 if seizure_number ~= -1
     seizure_number=find(seizure_begin_h == str2double(time));
