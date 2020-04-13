@@ -13,7 +13,7 @@ histogram_number=2; % to increase by on every launch
 seizure_number=1;   % can be constant
 histogram_group_pop_up=true; % first run must be false
 
-histogram_number_interictal=2; % to increase by on every launch 
+histogram_number_interictal=1; % to increase by on every launch 
 interictal_number=1;   % can be constant
 lbp_length = 6;
 
