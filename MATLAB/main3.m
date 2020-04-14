@@ -43,7 +43,7 @@ if seizure_number ~= -1
 end
 
 %% histograms
-lbp_length = 6;
+lbp_length = 8;
 bins= 2^lbp_length;
 % window moves right by half a second
 D_RAD=zeros(1,2*numel(y)/fs);
@@ -72,12 +72,19 @@ for i = 1 : fs/2 : numel(y)-fs/2-fs
     iteration = iteration + 1;
 end
 
+t_D_RAD = (0.5:0.5:3600);
 figure(2)
-plot(D_RAD, 'r');
+plot(t_D_RAD, D_RAD, 'r');
+xlim([0 max(t_D_RAD)])
 grid on
 xlabel('Time, s')
 ylabel('RAD')
 title(title_name);
+if seizure_number ~= -1
+    hold on
+    plot(seizure_begin_s(seizure_number),D_RAD(seizure_begin_s(seizure_number)*2),'b*');
+    plot(seizure_end_s(seizure_number),D_RAD(seizure_end_s(seizure_number)*2),'c*');
+end
 
 % % 1 second of a seizure
 % histogram_number=histogram_number-1;
@@ -94,3 +101,34 @@ title(title_name);
 
 
 % so we have N/fs histograms and one histogram is generated every second
+
+%% learning data preparation
+% 3 inputs in the NN
+inputs_amount = 3;
+
+D_RAD_rescaled = rescale(D_RAD);
+x = zeros(inputs_amount, numel(D_RAD_rescaled)); 
+y_desired = zeros(1, numel(D_RAD_rescaled));
+
+for i=0:numel(D_RAD_rescaled)-3
+    for j=1:inputs_amount
+        x(j,i+1)=D_RAD_rescaled(i+j);
+    end
+end
+
+for i=1:numel(seizure_number)
+    y_desired(seizure_begin_s(i)*2:seizure_end_s(i)*2)=1;% *2 because there are 7200 elements every 0.5s
+end
+
+t_D_RAD = (0.5:0.5:3600);
+figure(3)
+plot(t_D_RAD, rescale(D_RAD), 'r');
+xlim([0 max(t_D_RAD)])
+grid on
+xlabel('Time, s')
+ylabel('rescaled RAD')
+title(title_name);
+hold on 
+plot(t_D_RAD, y_desired, 'b')
+
+writematrix([x', y_desired'], 'dataset.csv')

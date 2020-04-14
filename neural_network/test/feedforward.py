@@ -1,20 +1,6 @@
 #!/usr/bin/python3
 
 import numpy
-import csv
-
-def parse_csv(a_file_name):
-    with open(a_file_name, "rU") as csv_file:
-        content = csv.reader(csv_file, delimiter=",")
-
-        inputs = []
-        outputs = []
-
-        for row in content:
-            inputs.append([float(i) for i in row[0:3]])
-            outputs.append([float(row[3])])
-
-    return (inputs, outputs)
 
 class FeedForward:
     """
@@ -98,23 +84,33 @@ if __name__ == "__main__":
     w2 = [[1], [1], [1], [1]] # 1 output from 4 sources
     b2 = [1]
     
+    x = [1,1,1]
+    
     neuralNetwork = FeedForward(w1, b1, w2, b2, 1)
-    
-    # training
-    data = parse_csv("./dataset/ID08/6026_6040.csv")
-    x = data[0]
-    y = data[1]
-    data_num = len(data[0])
-    
-    for i in range(0, 100): 
+
+    #in 1000 epochs 366th gives the smallest squared error
+    for i in range(0, 366): 
         neuralNetwork.e = 0
-        
-        for j in range(0, data_num):
-            neuralNetwork.learn(x[j], y[j])
-        
+        d1 = [0,0,1]
+        o1 = [0]
+        neuralNetwork.learn(d1,o1)
+        d2 = [0,1,1]
+        o2 = [0.3]
+        neuralNetwork.learn(d2,o2)
+        d3 = [1,0,1]
+        o3 = [0.5]
+        neuralNetwork.learn(d3,o3) 
+        d4 = [1,1,1]
+        o4 = [0.9]
+        neuralNetwork.learn(d4,o4)
+        d5 = [1,1,0]
+        o5 = [0.7]
+        neuralNetwork.learn(d5,o5)
         print(i)
         print(neuralNetwork.e)
 
-    # testing
-    print(neuralNetwork.think([0.781918471785434,0.82502750133407,0.833782303751735])) #ictal
-    print(neuralNetwork.think([0.754916643917382,0.79069464087982,0.856130785716045])) #interactal
+    print(neuralNetwork.think([0,0,1]))
+    print(neuralNetwork.think([0,1,1]))
+    print(neuralNetwork.think([1,0,1]))
+    print(neuralNetwork.think([1,1,1]))
+    print(neuralNetwork.think([1,1,0]))
