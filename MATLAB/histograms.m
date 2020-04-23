@@ -1,6 +1,6 @@
 clearvars -except keepVariables histogram_values_group_ictal histogram_values_group_both histogram_values_group_interictal counter
-time='18'; % hours
-patient='08';
+time='233'; % hours
+patient='02';
 % 0 is the first one: histogram number for particular seizure
 % every raw in number_of_histograms represents amount of histograms
 % which can be computed for that raw, that is a seizure. For example
@@ -9,9 +9,9 @@ patient='08';
 % histogram_number=5; 
 % seizure_number=2;
 
-histogram_number=2; % to increase by on every launch 
+histogram_number=1; % to increase by on every launch 
 seizure_number=1;   % can be constant
-histogram_group_pop_up=true; % first run must be false
+histogram_group_pop_up=false; % first run must be false
 
 histogram_number_interictal=1; % to increase by on every launch 
 interictal_number=1;   % can be constant

@@ -56,7 +56,7 @@ if seizure_number ~= -1
     plot(seizure_begin_s(seizure_number),y(seizure_begin_s(seizure_number)),'b*');
     plot(seizure_end_s(seizure_number),y(seizure_end_s(seizure_number)),'c*');
 end
-%% plot the signal power
+%% plot the signal energy
 P=y.^2;
 
 figure(3)
@@ -65,8 +65,8 @@ xlim([0 max(t1)])
 ylim([-1.1*max(P) 1.1*max(P)])
 grid on
 xlabel('Time, s')
-ylabel('Power, \muW')
-title(title_name);
+ylabel('Energy, \muJ')
+title('Energy');
 
 if seizure_number ~= -1
     hold on
@@ -90,7 +90,7 @@ ylim([-1.1*max(Pmean) 1.1*max(Pmean)])
 grid on
 xlabel('Time, s')
 ylabel('Power, \muW (SOI)')
-title(title_name);
+title('SOI');
 
 if seizure_number ~= -1
     hold on
@@ -131,7 +131,7 @@ ylim([-1.1*max(u) 1.1*max(u)])
 grid on
 xlabel('Time, s')
 ylabel('u')
-title(title_name);
+title('PID');
 
 if seizure_number ~= -1
     hold on
@@ -157,7 +157,7 @@ ylim([-1.1*max(Pmeand) 1.1*max(Pmeand)])
 grid on
 xlabel('Time, s')
 ylabel('Power, mean \muW downsample')
-title(title_name);
+title('SOI downample');
 
 if seizure_number ~= -1
     hold on

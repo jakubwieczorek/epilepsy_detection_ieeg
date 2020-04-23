@@ -1,7 +1,9 @@
 clearvars;
-time='18'; % hours
-patient='08';
+time='230'; % hours
+patient='02';
 seizure_number=1;
+lbp_length=4;
+electrode_number=1;
 
 exp_name =strcat('ID', patient, '_', time, 'h');
 title_name =strcat('ID', patient, '\_', time, 'h');
@@ -11,9 +13,9 @@ load(strcat('../data/ID', patient, '/ID', patient, '_info.mat'));
 
 fs=double(fs);
 
-y = EEG(1, :);                           % get the first channel
+y = EEG(electrode_number, :);                           % get the first channel
 N = length(y);                           % signal length
-
+y=y.^2;
 seizure_begin_h = ceil(seizure_begin/3600);
 seizure_end_h = ceil(seizure_end/3600);
 
@@ -43,7 +45,6 @@ if seizure_number ~= -1
 end
 
 %% histograms
-lbp_length = 8;
 bins= 2^lbp_length;
 % window moves right by half a second
 D_RAD=zeros(1,2*numel(y)/fs);
@@ -71,7 +72,6 @@ for i = 1 : fs/2 : numel(y)-fs/2-fs
     D_RAD(iteration) = 1 / ((1/D_KL_pq) + (1/D_KL_qp));
     iteration = iteration + 1;
 end
-
 t_D_RAD = (0.5:0.5:3600);
 figure(2)
 plot(t_D_RAD, D_RAD, 'r');
@@ -116,7 +116,7 @@ for i=0:numel(D_RAD_rescaled)-3
     end
 end
 
-for i=1:numel(seizure_number)
+for i=seizure_number'
     y_desired(seizure_begin_s(i)*2:seizure_end_s(i)*2)=1;% *2 because there are 7200 elements every 0.5s
 end
 

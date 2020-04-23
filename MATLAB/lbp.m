@@ -30,8 +30,8 @@ if seizure_number ~= -1
 end
 
 %% LBP
-samples=fs; 
-k=8;
+samples=fs/2; 
+k=4;
 k=floor(k/2);
 lbp_values = zeros(1, samples); % 512 samples so 
 bins_number=2^(2*k);
@@ -49,16 +49,18 @@ end
 % for k=3 -> [1,2,4,0,8,16,32]
 
 %for i=1+k:2*k+1:N-k
+index = 1;
 for i=1+k:samples-k
+    index = index + 1;
     lbp_window_vector=y(i-k:i+k); % size 2*k+1
     
     for j=1:2*k+1 % loop through every element in a window
         if lbp_window_vector(j) >= y(i) % i element is 1 in binary vector
-            lbp_values(i) = lbp_values(i) + binomial_weights(j);
+            lbp_values(index) = lbp_values(index) + binomial_weights(j);
             
         end
     end
-    histogram_values(lbp_values(i)+1) = histogram_values(lbp_values(i)+1) + 1;
+    histogram_values(lbp_values(index)+1) = histogram_values(lbp_values(index)+1) + 1;
 end
 
 figure(6)
