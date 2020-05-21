@@ -117,7 +117,7 @@ if __name__ == "__main__":
     
     nn2 = FeedForward.load('./model')
     
-    data = parse_csv("../../dataset/ID02/test_data.csv", 16)
+    data = parse_csv("../../dataset/ID02/test_data_2.csv", 16)
 
     test_images = data[0]
     test_labels = data[1] 

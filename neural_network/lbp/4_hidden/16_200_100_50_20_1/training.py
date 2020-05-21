@@ -28,7 +28,7 @@ class FeedForward:
     def __init__(self):
         # training
         #data = parse_csv("./dataset/ID08/6026_6040.csv")
-        data = parse_csv("../../dataset/ID02/train_data.csv", 16)
+        data = parse_csv("../../dataset/ID02/train_data_2.csv", 16)
         
         self.train_images = data[0]
         self.train_labels = data[1]
