@@ -28,13 +28,14 @@ class FeedForward:
     def __init__(self):
         # training
         #data = parse_csv("./dataset/ID08/6026_6040.csv")
-        data = parse_csv("../../dataset/ID02/train_data.csv", 512)
+        data =      parse_csv("../../dataset/ID02/train_data.csv", 512)
+        test_data = parse_csv("../../dataset/ID02/test_data.csv", 512)
         
         self.train_images = data[0]
         self.train_labels = data[1]
         
-        self.test_images = self.train_images
-        self.test_labels = self.train_labels
+        self.test_images = test_data[0]
+        self.test_labels = test_data[1]
     
     def createModel(self):
         self.model = keras.Sequential([ # layers in sequence
@@ -74,7 +75,7 @@ class FeedForward:
 if __name__ == "__main__":
     nn = FeedForward()
     nn.createModel()
-    nn.trainModel(5000)
+    nn.trainModel(30000)
     #nn.loadModel("./model")
     nn.saveModel("./model")
     nn.makeSomePrediction()
