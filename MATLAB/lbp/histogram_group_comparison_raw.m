@@ -3,10 +3,10 @@
 % network 
 clearvars
 
-time='233'; % hours
+time='230'; % hours
 patient='02';
 lbp_length=6;
-electrode_number=1;
+electrode_number=8;
 second_factor = 1;
 
 exp_name =strcat('ID', patient, '_', time, 'h');
@@ -31,6 +31,7 @@ ictal_begin=seizure_begin_s*fs;
 ictal_end  =seizure_end_s  *fs;
 number_of_histograms_ictal=(ictal_end-ictal_begin)/fs;
 
+figure(1)
 %% plot 512 histograms of ictal period on the same figure
 for i=0:number_of_histograms_ictal*second_factor
     window = y(ictal_begin + i*512/second_factor + 1 : ...
@@ -41,14 +42,14 @@ for i=0:number_of_histograms_ictal*second_factor
     histogram_values_group(i+1,:) = histogram_values;
 end
 y_desired = ones(1, number_of_histograms_ictal+1)';
-writematrix([rescale(histogram_values_group, 'InputMax', 245), y_desired], 'ictal.csv')
+%writematrix([rescale(histogram_values_group, 'InputMax', 245), y_desired], 'ictal.csv')
 max(histogram_values_group)
-figure(1)
+subplot(1,2,1);
 bar(histogram_values_group', 'hist')
 xlabel('LBP value')
-ylabel('Number of occurences')
+ylabel('Number of occurrences')
 xlim([0 2^lbp_length + 1])
-ylim([0 300])
+ylim([0 280])
 title('ictal')
 colorbar
 
@@ -63,14 +64,14 @@ for i=0:number_of_histograms_ictal*second_factor
     histogram_values_group(i+1,:) = histogram_values;
 end
 y_desired = zeros(1, number_of_histograms_ictal+1)';
-writematrix([rescale(histogram_values_group, 'InputMax', 245), y_desired], 'interictal.csv')
+%writematrix([rescale(histogram_values_group, 'InputMax', 245), y_desired], 'interictal.csv')
 max(histogram_values_group)
-figure(2)
+subplot(1,2,2);
 bar(histogram_values_group', 'hist')
 xlabel('LBP value')
-ylabel('Number of occurences')
+ylabel('Number of occurrences')
 xlim([0 2^lbp_length + 1])
-ylim([0 300])
+ylim([0 280])
 title('interictal')
 colorbar
 
@@ -96,7 +97,7 @@ end
 
 % 300 for test and train data in order to rescale both datasets in the same
 % way
-writematrix([rescale(histogram_values_group, 'InputMax', 300), y_desired'], 'test.csv')
+writematrix([rescale(histogram_values_group, 'InputMax', 280), y_desired'], 'test_data.csv')
 
 %% check if y_desired is in the good place
 t1 = (0:N-1)/fs;                         % time vector
