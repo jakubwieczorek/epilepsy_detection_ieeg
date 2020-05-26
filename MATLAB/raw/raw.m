@@ -11,7 +11,7 @@ clearvars
 
 time='233'; % hours
 patient='02';
-electrode_number=1;
+electrode_number=8;
 seizure_number = 1;
 
 exp_name =strcat('ID', patient, '_', time, 'h');
@@ -44,11 +44,11 @@ factor=1;
 dataset = zeros(N/fs*factor, fs);
 for i=1: fs/factor: N-fs/factor+1 % move every quarter of the second
     %y_mean(index) = mean(y(electrode_number, i: i+fs/factor-1).^2);
-    dataset(index,:) = y(electrode_number, i: i+fs-1); % half of the second samples
+    dataset(index,:) = y(i: i+fs-1); % half of the second samples
     %dataset_y(index) = y_desired(i);
     index=index+1;
 end
-writematrix([rescale(dataset, 'InputMax', 1.0906e+03), y_desired'], 'test.csv')
+writematrix([rescale(dataset, 'InputMax', 1500), y_desired'], 'train_data.csv')
 
 %% check if y_desired is in the good place
 t1 = (0:N-1)/fs;                         % time vector
