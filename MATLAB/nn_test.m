@@ -1,5 +1,5 @@
-T =  readtable(strcat('../neural_network/raw/3_hidden/512_400_250_30_1/100_epochs/train_result.csv'));
-T2 = readtable(strcat('../neural_network/raw/3_hidden/512_400_250_30_1/100_epochs/test_result.csv'));
+T =  readtable(strcat('../neural_network/raw/4_hidden/512_400_300_200_50_1/30000_epochs/train_result.csv'));
+T2 = readtable(strcat('../neural_network/raw/4_hidden/512_400_300_200_50_1/30000_epochs/test_result.csv'));
 
 A = table2array(T);
 A_size = size(A);

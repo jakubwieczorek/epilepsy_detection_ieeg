@@ -74,9 +74,9 @@ class FeedForward:
 
 if __name__ == "__main__":
     nn = FeedForward()
-    nn.createModel()
+    #nn.createModel()
     nn.loadModel("./model")
     nn.trainModel(1000)
     nn.saveModel("./model")
-    nn.makeSomePrediction()
+    #nn.makeSomePrediction()
     #nn.saveModel("./model")
