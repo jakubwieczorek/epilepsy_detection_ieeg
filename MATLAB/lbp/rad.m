@@ -1,3 +1,8 @@
+%%
+% RAD doodles not used for the paper so far. RAD stands for
+% resistor average difference as is used to compare histograms.
+% the idea was to apply compared adjacent histograms to the nn
+%%
 clearvars;
 time='230'; % hours
 patient='02';
@@ -8,8 +13,8 @@ electrode_number=1;
 exp_name =strcat('ID', patient, '_', time, 'h');
 title_name =strcat('ID', patient, '\_', time, 'h');
 
-load(strcat('../data/ID', patient, '/', exp_name, '.mat'));
-load(strcat('../data/ID', patient, '/ID', patient, '_info.mat'));
+load(strcat('../../data/ID', patient, '/', exp_name, '.mat'));
+load(strcat('../../data/ID', patient, '/ID', patient, '_info.mat'));
 
 fs=double(fs);
 

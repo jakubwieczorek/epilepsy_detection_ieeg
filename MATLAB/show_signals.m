@@ -1,3 +1,6 @@
+%%
+% plot test and train data next to each other on the same figure
+%%
 clear all;
 time='233'; % hours
 patient='02';
@@ -22,7 +25,7 @@ seizure_end_h = ceil(seizure_end/3600);
 seizure_end_s = ceil(mod(seizure_end, 3600));
 seizure_end_s = seizure_end_s(seizure_end_h==str2double(time));
 
-%% plot the signal in seconds
+%% train
 t1 = (0:N-1)/fs;                         % time vector
 electrodes = size(EEG);
 plotnum = 0;
@@ -75,7 +78,7 @@ seizure_end_h = ceil(seizure_end/3600);
 seizure_end_s = ceil(mod(seizure_end, 3600));
 seizure_end_s = seizure_end_s(seizure_end_h==str2double(time));
 
-%% plot the signal in seconds
+%% test
 t1 = (0:N-1)/fs;                         % time vector
 electrodes = size(EEG);
 plotnum = 0;

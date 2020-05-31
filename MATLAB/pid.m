@@ -1,3 +1,7 @@
+%%
+% pid regulator not used for the paper. Most likely will be exploited
+% for the second version, because of derivative potential
+%%
 clear all;
 time='233'; % hours
 patient='02';
@@ -25,7 +29,7 @@ if seizure_number ~= -1
 end
 %% PID
 
-for j=[8, 9, 37, 38, 39, 48, 49, 50]
+for j=[8]
     y = EEG(j, :);
 
     figure(j)

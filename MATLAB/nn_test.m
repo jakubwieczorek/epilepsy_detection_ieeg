@@ -1,3 +1,8 @@
+%%
+% prediction test, desired and predictioned outputs
+% are plonted on the same figure
+
+%% two experiments
 % T =  readtable(strcat('../neural_network/fir/2_hidden/512_400_40_1/1000_epochs/train_result.csv'));
 % T2 = readtable(strcat('../neural_network/fir/2_hidden/512_400_40_1/1000_epochs/test_result.csv'));
 % 
@@ -31,6 +36,7 @@
 % legend('predicted', 'expected')
 % hold off;
 
+%% several experiments
 n=2;
 subplotnum = 1;
 for i = [10, 30]

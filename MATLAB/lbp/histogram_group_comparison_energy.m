@@ -1,4 +1,4 @@
-% exactly the same as in rawl, but here energy
+% exactly the same as in raw, but here energy
 % so y=y.^2
 
 clearvars

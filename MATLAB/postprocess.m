@@ -1,3 +1,8 @@
+%%
+% postprocess nn prediction and plot two predictions
+% in two raws repeatedly to zoom a second one and check delays
+%%
+
 figure(1)
 
 n=2;

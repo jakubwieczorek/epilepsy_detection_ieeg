@@ -1,3 +1,9 @@
+%%
+% creates test and train data for neural network with 3600
+% raws so 1h, were every raw is an fir moving average output
+% consisting of 512 adjecent samples with last column as desired
+% nn prediction
+%%
 clear all;
 time='230'; % hours
 patient='02';
@@ -38,6 +44,8 @@ for i=numel(seizure_begin_s)
     y_desired(seizure_begin_s(i):seizure_end_s(i))=1;    
 end
 
+%% Plot fir next to the raw data. 2 raws same, in order
+%  to show zoomed data on the second one
 figure(1)
 subplot(2,2,1)
 plot(t1, Pmean, 'r')
@@ -86,7 +94,7 @@ hold on
 stairs((1:3600),y_desired*1000, 'b');
 hold off
 
-
+%% save data
 index=1;
 factor=1;
 dataset = zeros(N/fs*factor, fs);

@@ -1,5 +1,6 @@
 %% single histogram figure of bar and histogram function to comparise
 %  without calculate histogram function use
+%% 
 clear all;
 time='233'; % hours
 patient='02';
