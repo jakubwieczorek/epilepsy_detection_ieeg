@@ -38,15 +38,54 @@ for i=numel(seizure_begin_s)
     y_desired(seizure_begin_s(i):seizure_end_s(i))=1;    
 end
 
+figure(1)
+subplot(2,2,1)
 plot(t1, Pmean, 'r')
 xlim([0 max(t1)])
 ylim([1.1*min(Pmean) 1.1*max(Pmean)])
 grid on
-xlabel('Time, s')
-ylabel('Power, \muW (SOI)')
+xlabel('Time [s]')
+ylabel('Signal average [\muV]')
 title('FIR');
 hold on 
-stairs((1:3600),y_desired*100, 'b');
+stairs((1:3600),y_desired*50, 'b');
+hold off
+
+subplot(2,2,2)
+plot(t1, y, 'r');
+xlim([0 max(t1)])
+ylim([1.1*min(y) 1.1*max(y)])
+grid on
+xlabel('Time [s]')
+ylabel('Amplitude [\muV]')
+title('iEEG');
+hold on
+stairs((1:3600),y_desired*1000, 'b');
+hold off
+
+% for zoom
+subplot(2,2,3)
+plot(t1, Pmean, 'r')
+xlim([0 max(t1)])
+ylim([1.1*min(Pmean) 1.1*max(Pmean)])
+grid on
+xlabel('Time [s]')
+ylabel('Signal average [\muV]')
+hold on 
+stairs((1:3600),y_desired*50, 'b');
+hold off
+
+subplot(2,2,4)
+plot(t1, y, 'r');
+xlim([0 max(t1)])
+ylim([1.1*min(y) 1.1*max(y)])
+grid on
+xlabel('Time [s]')
+ylabel('Amplitude [\muV]')
+hold on
+stairs((1:3600),y_desired*1000, 'b');
+hold off
+
 
 index=1;
 factor=1;

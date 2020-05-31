@@ -9,7 +9,7 @@
 
 clearvars
 
-time='233'; % hours
+time='230'; % hours
 patient='02';
 electrode_number=8;
 seizure_number = 1;
@@ -48,7 +48,7 @@ for i=1: fs/factor: N-fs/factor+1 % move every quarter of the second
     %dataset_y(index) = y_desired(i);
     index=index+1;
 end
-writematrix([rescale(dataset, 'InputMax', 1500), y_desired'], 'train_data.csv')
+writematrix([rescale(dataset, 'InputMax', 1500), y_desired'], 'test_data.csv')
 
 %% check if y_desired is in the good place
 t1 = (0:N-1)/fs;                         % time vector

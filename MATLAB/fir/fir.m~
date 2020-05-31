@@ -1,5 +1,5 @@
 clear all;
-time='233'; % hours
+time='230'; % hours
 patient='02';
 electrode_number=8;
 
@@ -29,15 +29,8 @@ m=1;
 
 Pmean = zeros(1, N);                  
 for i = k:m:N 
-    Pmean(i) = mean(y(i-k: k+i));  % from 1 to k+1 mean, 2 to k+2 mean
+    Pmean(i) = mean(y(i-k+1: i));
 end
-
-%     Nmean = ceil(N / k);
-%     t1 = (0:Nmean-1)/fs;                         % time vector
-%     Pmean = zeros(1, Nmean);                  
-%     for i = 1: Nmean-1
-%         Pmean(i) = mean(y((i-1)*k+1: i*k));  % from 1 to k mean, k+1 to 2k mean
-%     end
 
 y_desired = zeros(1, N/fs);
 
@@ -45,6 +38,8 @@ for i=numel(seizure_begin_s)
     y_desired(seizure_begin_s(i):seizure_end_s(i))=1;    
 end
 
+figure(1)
+subplot(2,2,1)
 plot(t1, Pmean, 'r')
 xlim([0 max(t1)])
 ylim([1.1*min(Pmean) 1.1*max(Pmean)])
@@ -53,7 +48,44 @@ xlabel('Time, s')
 ylabel('Power, \muW (SOI)')
 title('FIR');
 hold on 
+stairs((1:3600),y_desired*100, 'b');
+hold off
+
+subplot(2,2,2)
+plot(t1, y, 'r');
+xlim([0 max(t1)])
+ylim([1.1*min(y) 1.1*max(y)])
+grid on
+xlabel('Time, s')
+ylabel('Amplitude, \muV')
+title('iEEG');
+hold on
 stairs((1:3600),y_desired*1000, 'b');
+hold off
+
+% for zoom
+subplot(2,2,3)
+plot(t1, Pmean, 'r')
+xlim([0 max(t1)])
+ylim([1.1*min(Pmean) 1.1*max(Pmean)])
+grid on
+xlabel('Time, s')
+ylabel('Power, \muW (SOI)')
+hold on 
+stairs((1:3600),y_desired*100, 'b');
+hold off
+
+subplot(2,2,4)
+plot(t1, y, 'r');
+xlim([0 max(t1)])
+ylim([1.1*min(y) 1.1*max(y)])
+grid on
+xlabel('Time, s')
+ylabel('Amplitude [\muV]')
+hold on
+stairs((1:3600),y_desired*1000, 'b');
+hold off
+
 
 index=1;
 factor=1;
@@ -62,4 +94,4 @@ for i=1: fs/factor: N-fs/factor+1 % move every quarter of the second
     dataset(index,:) = Pmean(i: i+fs-1); % half of the second samples
     index=index+1;
 end
-writematrix([rescale(dataset, 'InputMax', 100), y_desired'], 'train_data.csv')
+writematrix([rescale(dataset, 'InputMax', 100), y_desired'], 'test_data.csv')

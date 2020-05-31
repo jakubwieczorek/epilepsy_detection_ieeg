@@ -33,9 +33,9 @@
 
 n=2;
 subplotnum = 1;
-for i = [1, 5]
-    T =  readtable(strcat('../neural_network/fir/2_hidden/512_400_40_1/',string(i),'000_epochs/train_result.csv'));
-    T2 = readtable(strcat('../neural_network/fir/2_hidden/512_400_40_1/',string(i),'000_epochs/test_result.csv'));
+for i = [10, 30]
+    T =  readtable(strcat('../neural_network/fir/4_hidden/512_400_300_200_50_1/',string(i),'000_epochs/train_result.csv'));
+    T2 = readtable(strcat('../neural_network/fir/4_hidden/512_400_300_200_50_1/',string(i),'000_epochs/test_result.csv'));
     
     A = table2array(T);
     A_size = size(A);

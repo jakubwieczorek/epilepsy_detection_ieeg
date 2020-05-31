@@ -1,0 +1,63 @@
+T =  readtable(strcat('../neural_network/raw/3_hidden/512_400_250_30_1/20000_epochs/train_result.csv'));
+T2 = readtable(strcat('../neural_network/raw/3_hidden/512_400_250_30_1/20000_epochs/test_result.csv'));
+
+A = table2array(T);
+A_size = size(A);
+
+figure(1)
+subplot(1,2,1);
+stairs((1:3600), A(:, 1), 'r');
+grid on
+xlabel('Time [s]')
+ylabel('Probability')
+xlim([0 3600])
+ylim([0 1.01])
+hold on
+stairs((1:3600), A(:, 2), '--b');
+legend('predicted', 'expected')
+hold off;
+
+A = table2array(T2);
+A_size = size(A);
+
+subplot(1,2,2);
+stairs((1:3600), A(:, 1), 'r');
+grid on
+xlabel('Time [s]')
+ylabel('Probability')
+xlim([0 3600])
+ylim([0 1.01])
+hold on 
+stairs((1:3600), A(:, 2), '--b');
+legend('predicted', 'expected')
+hold off;
+
+figure(2)
+
+A2=zeros(size(A));
+seizure=false;
+i=1;
+while i<=3600
+    if A(i,1) >= 0.5
+        for j=i+1:i+10
+            if A(j,1) >= 0.5
+                seizure_confirm=true;
+                j=j-1;
+                break;
+            end
+        end
+    end
+    A2(i:i+j) = seizure_confirm;
+    i=i+j;
+end
+
+stairs((1:3600), A2(:, 1), 'r');
+grid on
+xlabel('Time [s]')
+ylabel('Probability')
+xlim([0 3600])
+ylim([0 1.01])
+hold on 
+stairs((1:3600), A(:, 2), '--b');
+legend('predicted', 'expected')
+hold off;
