@@ -30,10 +30,10 @@ t1 = (0:N-1)/fs;                         % time vector
 electrodes = size(EEG);
 plotnum = 0;
 f=figure(1);
-for i=8%[8,9,37,50]%[8, 9, 37, 38, 39, 48, 49, 50]
+for i=[8,9,37,50]%[8, 9, 37, 38, 39, 48, 49, 50]
     y = EEG(i, :);
     plotnum = plotnum+1;
-    %figure(i)
+    figure(i)
     subplot(1,2,1);
     plot(t1, y, 'r');
     xlim([0 max(t1)])
@@ -83,10 +83,10 @@ t1 = (0:N-1)/fs;                         % time vector
 electrodes = size(EEG);
 plotnum = 0;
 f=figure(1);
-for i=8%[8,9,37,50]%[8, 9, 37, 38, 39, 48, 49, 50]
+for i=[8,9,37,50]%[8, 9, 37, 38, 39, 48, 49, 50]
     y = EEG(i, :);
     plotnum = plotnum+1;
-    %figure(i)
+    figure(i)
     subplot(1,2,2);
     plot(t1, y, 'r');
     xlim([0 max(t1)])

@@ -11,8 +11,8 @@ second_factor = 1;
 
 exp_name =strcat('ID', patient, '_', time, 'h');
 
-load(strcat('../../data/ID', patient, '/', exp_name, '.mat'));
-load(strcat('../../data/ID', patient, '/ID', patient, '_info.mat'));
+load(strcat('../../../data/ID', patient, '/', exp_name, '.mat'));
+load(strcat('../../../data/ID', patient, '/ID', patient, '_info.mat'));
 
 fs=double(fs);
 
@@ -52,6 +52,7 @@ xlim([0 2^lbp_length + 1])
 ylim([0 280])
 title('ictal')
 colorbar
+histogram_values_group1=histogram_values_group;
 
 clear histogram_values_group lbp_values_group
 
@@ -74,8 +75,19 @@ xlim([0 2^lbp_length + 1])
 ylim([0 280])
 title('interictal')
 colorbar
-
+histogram_values_group2=histogram_values_group;
 clear histogram_values_group lbp_values_group
+
+%% difference
+histogram_values_group3 = histogram_values_group2-histogram_values_group1;
+figure(2)
+bar(histogram_values_group3', 'hist')
+xlabel('LBP value')
+ylabel('Number of occurrences')
+xlim([0 2^lbp_length + 1])
+ylim([0 300])
+title('difference')
+colorbar
 
 %% test data preparation -- whole set
 %  y_desired is 1 where there is seizure, 0 otherwise
