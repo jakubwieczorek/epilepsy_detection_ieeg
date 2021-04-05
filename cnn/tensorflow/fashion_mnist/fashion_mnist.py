@@ -1,3 +1,7 @@
+# https://www.superdatascience.com/blogs/the-ultimate-guide-to-convolutional-neural-networks-cnn
+# https://datascience-enthusiast.com/DL/Convolution_model_Step_by_Stepv2.html
+# https://stats.stackexchange.com/questions/153531/what-is-batch-size-in-neural-network
+
 import tensorflow as tf
 from tensorflow import keras
 import numpy as np
@@ -30,16 +34,48 @@ class FeedForward:
         plt.show()
 
     def createModel(self):
+        # 2D is for images. Even grayscale, so 28x28x1
         self.model = keras.Sequential([ # layers in sequence
-                keras.layers.Flatten(input_shape=(28,28)),
-                keras.layers.Dense(128, activation="relu"), # Dense means fully connected
+                # amount of filters is amount of outputs
+                # each filter of dimension 2x2 -> 28*28/4=196
+                # each filter of dimension 3x3 -> 28*28/9=87.11
+                keras.layers.Conv2D(87, (3, 3), activation="relu", padding="same", input_shape=(28, 28, 1)),
+                # MaxPooling is used to downsample the data.
+                # Formula is: output_shape=(input_shape - pool_size + 1)/strides, so for pool_size 2 and input_size 5
+                # output_size = 5-2+1 = 4
+                # keras.layers.MaxPooling1D(2),
+                # keras.layers.Conv1D(32, 3, activation="relu"),
+                keras.layers.Flatten(),
+                keras.layers.Dense(10, activation="softmax")
+            ])
+        self.model.compile(optimizer="adam", loss="sparse_categorical_crossentropy", metrics=["accuracy"])
+
+    def createModel2(self):
+        # Conv1D is for 1D data like signals, from for example different sensors. Ideal for iEEG
+        self.model = keras.Sequential([ # layers in sequence
+                # 32 filters, 3 kernels (1D convolutional window), 28 vectors of 28-dimensional vectors
+                keras.layers.Conv1D(32, 3, activation="relu", input_shape=(28, 28)),
+                keras.layers.MaxPooling1D(2),
+                keras.layers.Conv1D(32, 3, activation="relu"),
+                keras.layers.Flatten(),
                 keras.layers.Dense(10, activation="softmax")
             ])
         self.model.compile(optimizer="adam", loss="sparse_categorical_crossentropy", metrics=["accuracy"])
 
     def trainModel(self, save=True):
+        # https://stackoverflow.com/questions/63279168/valueerror-input-0-of-layer-sequential-is-incompatible-with-the-layer-expect
+        self.train_images = tf.reshape(self.train_images, (-1, 28, 28, 1))
+        self.test_images = tf.reshape(self.test_images, (-1, 28, 28, 1))
+
+        self.model.fit(self.train_images, self.train_labels, epochs=5)  # epochs reshuffles training data
+
+        test_loss, test_acc = self.model.evaluate(self.test_images, self.test_labels)
+
+        print("Accuracy", test_acc)
+
+    def trainModel2(self, save=True):
         #cp_callback = tf.keras.callback.ModelCheckpoint(filepath="./cp.ckpt", save_weights_only=True, verbose=1)
-        self.model.fit(self.train_images, self.train_labels, epochs=5) # epochs reshuffles training data
+        self.model.fit(self.train_images, self.train_labels, epochs=5)  # epochs reshuffles training data
 
         test_loss, test_acc = self.model.evaluate(self.test_images, self.test_labels)
 
