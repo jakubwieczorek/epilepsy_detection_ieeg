@@ -41,7 +41,7 @@ class FeedForward:
                 # each filter of dimension 3x3 -> 28*28/9=87.11
                 keras.layers.Conv2D(87, (3, 3), activation="relu", padding="same", input_shape=(28, 28, 1)),
                 # MaxPooling is used to downsample the data.
-                # Formula is: output_shape=(input_shape - pool_size + 1)/strides, so for pool_size 2 and input_size 5
+                # Formula is: output_shapcd e=(input_shape - pool_size + 1)/strides, so for pool_size 2 and input_size 5
                 # output_size = 5-2+1 = 4
                 # keras.layers.MaxPooling1D(2),
                 # keras.layers.Conv1D(32, 3, activation="relu"),
