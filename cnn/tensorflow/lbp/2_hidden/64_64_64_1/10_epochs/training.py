@@ -8,7 +8,7 @@ import csv
 print(tf.__version__)
 
 def parse_csv(a_file_name, rows_number, output=True):
-    with open(a_file_name, "rU") as csv_file:
+    with open(a_file_name, "r") as csv_file:
         content = csv.reader(csv_file, delimiter=",")
 
         inputs = []
@@ -46,20 +46,20 @@ class CNN:
         # Conv1D is for 1D data like signals, from for example different sensors. Ideal for iEEG
         self.model = keras.Sequential([  # layers in sequence
             # 8 filters, 3 kernels (1D convolutional window), 64x1
-            keras.layers.Conv1D(64, 8, activation="relu", input_shape=(64, 1)),
-            keras.layers.Conv1D(8, 3, activation="relu", padding="same"),
-            keras.layers.Conv1D(50, 5, activation="relu", padding="same"),
-            keras.layers.Conv1D(30, 8, activation="relu", padding="same"),
+            keras.layers.Conv1D(20, 3, activation="relu", input_shape=(64, 1)),
+            keras.layers.MaxPooling1D(pool_size=2),
+            keras.layers.Conv1D(10, 2, activation="relu"),
 
             keras.layers.Flatten(),
-            keras.layers.Dense(1, activation="sigmoid")
+            keras.layers.Dense(20, activation="relu"),
+            keras.layers.Dense(1)
         ])
-        self.model.compile(optimizer="adam", loss="binary_crossentropy", metrics=["accuracy"]) # with sparse_categorical_crossentropy does not working
+        self.model.compile(optimizer="adam", loss="mse") # with sparse_categorical_crossentropy does not working
 
     def trainModel(self, epochs_num, save=True):
         self.model.fit(self.train_data, self.train_labels, epochs=epochs_num) # epochs reshuffles training data
-        test_loss, test_acc = self.model.evaluate(self.test_data, self.test_labels)
-        print("Accuracy", test_acc)
+        # test_loss, test_acc = self.model.evaluate(self.test_data, self.test_labels)
+        # print("Accuracy", test_acc)
 
     def saveModel(self, path):
         self.model.save(path)
@@ -78,16 +78,19 @@ class CNN:
 
     def makeSomePrediction(self):
         prediction = self.model.predict(self.train_data)
-        print(prediction)
         with open("train_result.csv", "w") as f:
             writer = csv.writer(f)
-            writer.writerows(zip(prediction, self.test_labels))
+            writer.writerows(zip(prediction, self.train_labels))
 
+        prediction = self.model.predict(self.test_data)
+        with open("test_result.csv", "w") as f:
+            writer = csv.writer(f)
+            writer.writerows(zip(prediction, self.test_labels))
 
 if __name__ == "__main__":
     nn = CNN()
     nn.createModel()
-    nn.trainModel(10)
+    nn.trainModel(5)
     #nn.loadModel("./model")
     #nn.saveModel("./model")
     nn.makeSomePrediction()
