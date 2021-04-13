@@ -3,8 +3,11 @@
 % are ploted on the same figure
 
 % two experiments
-T =  readtable(strcat('../neural_network/lbp/5_hidden/64_64_64_64_64_64_1/1000_epochs/train_result.csv'));
-T2 = readtable(strcat('../neural_network/lbp/5_hidden/64_64_64_64_64_64_1/1000_epochs/test_result.csv'));
+% T =  readtable(strcat('../neural_network/lbp/5_hidden/64_64_64_64_64_64_1/1000_epochs/train_result.csv'));
+% T2 = readtable(strcat('../neural_network/lbp/5_hidden/64_64_64_64_64_64_1/1000_epochs/test_result.csv'));
+
+T =  readtable(strcat('../cnn/tensorflow/lbp/train_result.csv'));
+T2 = readtable(strcat('../cnn/tensorflow/lbp/test_result.csv'));
 
 A = table2array(T);
 A_size = size(A);
