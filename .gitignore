@@ -2,3 +2,5 @@ ieeg-ml-project
 data
 /MATLAB/lbp/02/train_data/
 /MATLAB/lbp/02/test_data/
+/cnn/tensorflow/lbp/ID02/model/
+/cnn/tensorflow/raw/dataset/ID02/
