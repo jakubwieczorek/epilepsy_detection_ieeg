@@ -1,0 +1,14 @@
+clearvars
+entropy_train_all('119')
+clearvars
+entropy_train_all('122')
+clearvars
+entropy_train_all('132')
+clearvars
+entropy_train_all('18')
+clearvars
+entropy_train_all('19')
+clearvars
+entropy_train_all('20')
+clearvars
+entropy_train_all('21')
