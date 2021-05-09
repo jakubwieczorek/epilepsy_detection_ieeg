@@ -85,13 +85,13 @@ class CNN:
         # Conv1D is for 1D data like signals, from for example different sensors. Ideal for iEEG
         self.model = keras.Sequential([  # layers in sequence
             # 8 filters, 3 kernels (1D convolutional window), 64x6
-            keras.layers.Conv1D(150, 20, activation="relu", padding="same", input_shape=(8, CNN.sensor_num)),
+            keras.layers.Conv1D(1000, 20, activation="relu", padding="same", input_shape=(8, CNN.sensor_num)),
             keras.layers.MaxPooling1D(pool_size=2),
-            keras.layers.Conv1D(100, 5, padding="same", activation="relu"),
-            # keras.layers.MaxPooling1D(pool_size=2),
-            # keras.layers.Conv1D(30, 3, activation="relu"),
+            keras.layers.Conv1D(500, 5, padding="same", activation="relu"),
+            keras.layers.MaxPooling1D(pool_size=2),
+            keras.layers.Conv1D(100, 3, padding="same", activation="relu"),
             keras.layers.Flatten(),
-            keras.layers.Dense(20, activation="relu"),
+            keras.layers.Dense(100, activation="relu"),
             keras.layers.Dense(1, activation="sigmoid")
         ])
         # self.model.compile(optimizer="adam", loss="mse") # with sparse_categorical_crossentropy does not working
@@ -136,7 +136,7 @@ class CNN:
 if __name__ == "__main__":
     nn = CNN()
     nn.createModel()
-    nn.trainModel(150)
+    nn.trainModel(100)
     # nn.loadModel("./model")
     nn.saveModel("./model")
     nn.makeSomePrediction()

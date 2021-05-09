@@ -10,5 +10,4 @@ self.model = keras.Sequential([  # layers in sequence
             keras.layers.Dense(10, activation="relu"),
             keras.layers.Dense(1, activation="sigmoid")
         ])
-self.model.compile(optimizer="adam", loss="binary_crossentropy")  # with sparse_categorical_crossentropy does not working
-
+self.model.compile(optimizer="adam", loss="binary_crossentropy")
