@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import csv
 import os
-import random
+
 # written in tf 2.2.0
 print(tf.__version__)
 
@@ -30,64 +30,47 @@ def parse_csv(a_file_name, rows_number, output=True):
         return (inputs)
 
 class CNN:
-    sensor_num = 1
+    sensor_num = 3
     input_num = 512
 
     def __init__(self):
-        data_dirs = ["../dataset/ID02/data230/",
-                     "../dataset/ID02/data233/"
-                    ]
+        # training
+        train_dir = "../dataset/ID02/train_data_some/"
+        test_dir = "../dataset/ID02/test_data_some/"
+        train_files = os.listdir(train_dir)
+        test_files = os.listdir(test_dir)
+        train_data = []
+        test_data = []
+        self.train_data = []
+        self.test_data = []
 
-        data_files = []
-        for diR in data_dirs:
-            [data_files.append(diR + file) for file in os.listdir(diR)]
+        for i in range(0, len(train_files)):
+            train_data.append(parse_csv(train_dir + train_files[i], CNN.input_num))
+            self.train_data.append(train_data[i][0])
+        self.train_labels = train_data[0][1]  # (3600,1), no (3600,1,62), same for all sensors
 
-        data = []
-        self.data = []
+        for i in range(0, len(test_files)):
+            test_data.append(parse_csv(test_dir + test_files[i], CNN.input_num))
+            self.test_data.append(test_data[i][0])
+        self.test_labels = test_data[0][1]
 
-        for i in range(0, len(data_files)):
-            data.append(parse_csv(data_files[i], CNN.input_num))
-            self.data.append(data[i][0])
+        self.train_data = np.array(self.train_data)  # shape (3, 4, 64)
+        self.test_data = np.array(self.test_data)
+        self.train_labels = np.array(self.train_labels)
+        self.test_labels = np.array(self.test_labels)
 
-        # (3600,1), no (3600,1,62), same for all sensors
-        self.data_labels = []
-        for i in range(0, len(data_dirs)):
-            self.data_labels = self.data_labels + data[i * CNN.sensor_num][1]
-
-        samples_num = len(self.data_labels)
-        rand_idx = list(range(1, samples_num))
-        random.shuffle(rand_idx)
-
-        self.data = tf.reshape(np.array(self.data), (-1, CNN.input_num, CNN.sensor_num)).numpy()
-        self.data_labels = np.array(self.data_labels)
-
-        train_idx = rand_idx[:int(samples_num / 3)]
-        test_idx = rand_idx[int(samples_num / 3):int(2 * samples_num / 3)]
-        val_idx = rand_idx[int(2 * samples_num / 3):]
-
-        self.train_data = self.data[train_idx]
-        self.train_labels = self.data_labels[train_idx]
-
-        self.test_data = self.data[test_idx]
-        self.test_labels = self.data_labels[test_idx]
-
-        self.val_data = self.data[val_idx]
-        self.val_labels = self.data_labels[val_idx]
+        self.test_data = tf.reshape(self.test_data, (-1, CNN.input_num, CNN.sensor_num)).numpy()
+        self.train_data = tf.reshape(self.train_data, (-1, CNN.input_num, CNN.sensor_num)).numpy()
 
     def createModel(self):
         # Conv1D is for 1D data like signals, from for example different sensors. Ideal for iEEG
         self.model = keras.Sequential([  # layers in sequence
             # 8 filters, 3 kernels (1D convolutional window), 64x6
-            keras.layers.Conv1D(100, 5, activation="relu", input_shape=(CNN.input_num, CNN.sensor_num)
-                                # kernel_regularizer=keras.regularizers.l1_l2(l1=1e-5, l2=1e-4),
-                                # bias_regularizer=keras.regularizers.l2(1e-4),
-                                # activity_regularizer=keras.regularizers.l2(1e-5)
-                                ),
-            keras.layers.Conv1D(100, 3, activation="relu"
-                                # kernel_regularizer=keras.regularizers.l1_l2(l1=1e-5, l2=1e-4),
-                                # bias_regularizer=keras.regularizers.l2(1e-4),
-                                # activity_regularizer=keras.regularizers.l2(1e-5)
-                                ),
+            keras.layers.Conv1D(30, 3, activation="relu", input_shape=(CNN.input_num, CNN.sensor_num)),
+            keras.layers.MaxPool1D(pool_size=2),
+            keras.layers.Conv1D(60, 3, activation="relu"),
+            keras.layers.MaxPool1D(pool_size=2),
+            keras.layers.Conv1D(60, 3, activation="relu"),
             keras.layers.Flatten(),
             keras.layers.Dense(50, activation="relu"),
             keras.layers.Dense(1, activation="sigmoid")
@@ -97,14 +80,7 @@ class CNN:
     # loss = tf.keras.losses.binary_crossentropy
 
     def trainModel(self, epochs_num, save=True):
-        self.history = self.model.fit(
-            self.train_data, self.train_labels,
-            epochs=epochs_num,
-            batch_size=32,  # 32 by default https://keras.io/api/models/model_training_apis/
-            # callbacks=callbacks,
-            # validation_split=0.2
-            validation_data=(self.val_data, self.val_labels)
-        )
+        self.model.fit(self.train_data, self.train_labels, epochs=epochs_num) # epochs reshuffles training data
         # test_loss, test_acc = self.model.evaluate(self.test_data, self.test_labels)
         # print("Accuracy", test_acc)
 

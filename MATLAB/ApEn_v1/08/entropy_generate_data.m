@@ -1,4 +1,4 @@
-function entropy_train_all(time)
+function entropy_generate_data(time)
 
     %time='18'; % hours
     patient='08';
@@ -73,9 +73,9 @@ function entropy_train_all(time)
     stairs(y_desired_2, 'b')
     hold off
 
-    %% test data preparation -- whole set
+    %% train data preparation -- whole set
 
-    dir_name = strcat('train_data', time);
+    dir_name = strcat('data', time);
     mkdir(dir_name);
 
     dataset = zeros(N/fs, sf, electrodes_num);
@@ -93,7 +93,7 @@ function entropy_train_all(time)
     end
 
     for electrode=1:electrodes_num
-        file_name = strcat('train_data_', int2str(electrode), '.csv');
+        file_name = strcat('data_', int2str(electrode), '.csv');
         writematrix([rescale(dataset(:, :, electrode), 'InputMax', 0.48), y_desired'], file_name)
         movefile(file_name, dir_name);
     end
