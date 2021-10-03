@@ -1,5 +1,5 @@
 ieeg-ml-project
-data
+SWEC-ETH/data
 /MATLAB/lbp/02/train_data/
 /MATLAB/lbp/02/test_data/
 /cnn/tensorflow/lbp/ID02/model/

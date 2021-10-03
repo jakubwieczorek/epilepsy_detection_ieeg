@@ -1,0 +1,1293 @@
+{
+  "name": "uci_epileptic-seizure-recognition",
+  "title": "Epileptic Seizure Recognition",
+  "description": "This dataset is a pre-processed and re-structured/reshaped version of a very commonly used dataset featuring epileptic seizure detection.\n\n# Source:\nQiuyi WuSchool of Mathematical SciencesRochester Institute of Technologyemail: qw9477'@'rit.edu\nErnest FokoueSchool of Mathematical SciencesRochester Institute of Technologyemail: epfeqa'@'rit.eduPhone: 585 739 6893\n# Data Set Information:\nPlease find the original data at ' '\n# Attribute Information:\nThe original dataset consists of 5 different folders, each with 100 files, with each file representing a single subject/person. Each file is a recording of brain activity for 23.6 seconds. The corresponding time-series is sampled into 4097 data points. Each data point is the value of the EEG recording at a different point in time.\nThe response variable is y in column 179\n y contains the category of the 178-dimensional input vector. Specifically y in {1, 2, 3, 4, 5}\n 5- eyes open, means when they were recording the EEG signal of the brain the patient had their eyes open 4- eyes closed, means when they were recording the EEG signal the patient had their eyes closed 3- Yes they identify where the region of the tumor was in the brain and recording the EEG activity from the healthy brain area 2- They recorder the EEG from the area where the tumor was located\n All subjects falling in classes 2, 3, 4, and 5 are subjects who did not have epileptic seizure\n 1- Recording of seizure activity\nThe Explanatory variables X1, X2, ..., X178\n Each 178-dimensional vector contained in a row, represents a randomly selected 1-second long sample picked from the single file. Recall that each file is a recording of brain activity for 23.6 seconds. The corresponding time-series is sampled into 4097 data points.\nThe original dataset consists of 5 different folders, each with 100 files, with each file representing a single subject/person. Each file is a recording of brain activity for 23.6 seconds. The corresponding time-series is sampled into 4097 data points. Each data point is the value of the EEG recording at a different point in time. Our motivation for creating this version of the data was to simplify access to the data via the creation of a .csv version of it. Although there are 5 classes most authors have done binary classification, namely class 1 (Epileptic seizure) against the rest.\n# Relevant Papers:\nN/A\n# Citation Request:\nPlease refer to the Machine Learning [Repository's citation policy.](http://archive.ics.uci.edu/ml/citation_policy.html)\n\n**_Source:_** http://archive.ics.uci.edu/ml/datasets/Epileptic+Seizure+Recognition",
+  "homepage": "https://data.world/uci/epileptic-seizure-recognition",
+  "license": "Other",
+  "resources": [
+    {
+      "name": "data",
+      "schema": {
+        "fields": [
+          {
+            "name": "column_a",
+            "title": "Column A",
+            "type": "string",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#string",
+            "dwSourceId": "column_a"
+          },
+          {
+            "name": "x1",
+            "title": "X1",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x1"
+          },
+          {
+            "name": "x2",
+            "title": "X2",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x2"
+          },
+          {
+            "name": "x3",
+            "title": "X3",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x3"
+          },
+          {
+            "name": "x4",
+            "title": "X4",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x4"
+          },
+          {
+            "name": "x5",
+            "title": "X5",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x5"
+          },
+          {
+            "name": "x6",
+            "title": "X6",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x6"
+          },
+          {
+            "name": "x7",
+            "title": "X7",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x7"
+          },
+          {
+            "name": "x8",
+            "title": "X8",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x8"
+          },
+          {
+            "name": "x9",
+            "title": "X9",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x9"
+          },
+          {
+            "name": "x10",
+            "title": "X10",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x10"
+          },
+          {
+            "name": "x11",
+            "title": "X11",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x11"
+          },
+          {
+            "name": "x12",
+            "title": "X12",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x12"
+          },
+          {
+            "name": "x13",
+            "title": "X13",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x13"
+          },
+          {
+            "name": "x14",
+            "title": "X14",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x14"
+          },
+          {
+            "name": "x15",
+            "title": "X15",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x15"
+          },
+          {
+            "name": "x16",
+            "title": "X16",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x16"
+          },
+          {
+            "name": "x17",
+            "title": "X17",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x17"
+          },
+          {
+            "name": "x18",
+            "title": "X18",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x18"
+          },
+          {
+            "name": "x19",
+            "title": "X19",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x19"
+          },
+          {
+            "name": "x20",
+            "title": "X20",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x20"
+          },
+          {
+            "name": "x21",
+            "title": "X21",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x21"
+          },
+          {
+            "name": "x22",
+            "title": "X22",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x22"
+          },
+          {
+            "name": "x23",
+            "title": "X23",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x23"
+          },
+          {
+            "name": "x24",
+            "title": "X24",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x24"
+          },
+          {
+            "name": "x25",
+            "title": "X25",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x25"
+          },
+          {
+            "name": "x26",
+            "title": "X26",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x26"
+          },
+          {
+            "name": "x27",
+            "title": "X27",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x27"
+          },
+          {
+            "name": "x28",
+            "title": "X28",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x28"
+          },
+          {
+            "name": "x29",
+            "title": "X29",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x29"
+          },
+          {
+            "name": "x30",
+            "title": "X30",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x30"
+          },
+          {
+            "name": "x31",
+            "title": "X31",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x31"
+          },
+          {
+            "name": "x32",
+            "title": "X32",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x32"
+          },
+          {
+            "name": "x33",
+            "title": "X33",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x33"
+          },
+          {
+            "name": "x34",
+            "title": "X34",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x34"
+          },
+          {
+            "name": "x35",
+            "title": "X35",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x35"
+          },
+          {
+            "name": "x36",
+            "title": "X36",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x36"
+          },
+          {
+            "name": "x37",
+            "title": "X37",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x37"
+          },
+          {
+            "name": "x38",
+            "title": "X38",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x38"
+          },
+          {
+            "name": "x39",
+            "title": "X39",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x39"
+          },
+          {
+            "name": "x40",
+            "title": "X40",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x40"
+          },
+          {
+            "name": "x41",
+            "title": "X41",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x41"
+          },
+          {
+            "name": "x42",
+            "title": "X42",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x42"
+          },
+          {
+            "name": "x43",
+            "title": "X43",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x43"
+          },
+          {
+            "name": "x44",
+            "title": "X44",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x44"
+          },
+          {
+            "name": "x45",
+            "title": "X45",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x45"
+          },
+          {
+            "name": "x46",
+            "title": "X46",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x46"
+          },
+          {
+            "name": "x47",
+            "title": "X47",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x47"
+          },
+          {
+            "name": "x48",
+            "title": "X48",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x48"
+          },
+          {
+            "name": "x49",
+            "title": "X49",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x49"
+          },
+          {
+            "name": "x50",
+            "title": "X50",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x50"
+          },
+          {
+            "name": "x51",
+            "title": "X51",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x51"
+          },
+          {
+            "name": "x52",
+            "title": "X52",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x52"
+          },
+          {
+            "name": "x53",
+            "title": "X53",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x53"
+          },
+          {
+            "name": "x54",
+            "title": "X54",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x54"
+          },
+          {
+            "name": "x55",
+            "title": "X55",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x55"
+          },
+          {
+            "name": "x56",
+            "title": "X56",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x56"
+          },
+          {
+            "name": "x57",
+            "title": "X57",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x57"
+          },
+          {
+            "name": "x58",
+            "title": "X58",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x58"
+          },
+          {
+            "name": "x59",
+            "title": "X59",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x59"
+          },
+          {
+            "name": "x60",
+            "title": "X60",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x60"
+          },
+          {
+            "name": "x61",
+            "title": "X61",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x61"
+          },
+          {
+            "name": "x62",
+            "title": "X62",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x62"
+          },
+          {
+            "name": "x63",
+            "title": "X63",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x63"
+          },
+          {
+            "name": "x64",
+            "title": "X64",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x64"
+          },
+          {
+            "name": "x65",
+            "title": "X65",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x65"
+          },
+          {
+            "name": "x66",
+            "title": "X66",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x66"
+          },
+          {
+            "name": "x67",
+            "title": "X67",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x67"
+          },
+          {
+            "name": "x68",
+            "title": "X68",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x68"
+          },
+          {
+            "name": "x69",
+            "title": "X69",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x69"
+          },
+          {
+            "name": "x70",
+            "title": "X70",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x70"
+          },
+          {
+            "name": "x71",
+            "title": "X71",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x71"
+          },
+          {
+            "name": "x72",
+            "title": "X72",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x72"
+          },
+          {
+            "name": "x73",
+            "title": "X73",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x73"
+          },
+          {
+            "name": "x74",
+            "title": "X74",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x74"
+          },
+          {
+            "name": "x75",
+            "title": "X75",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x75"
+          },
+          {
+            "name": "x76",
+            "title": "X76",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x76"
+          },
+          {
+            "name": "x77",
+            "title": "X77",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x77"
+          },
+          {
+            "name": "x78",
+            "title": "X78",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x78"
+          },
+          {
+            "name": "x79",
+            "title": "X79",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x79"
+          },
+          {
+            "name": "x80",
+            "title": "X80",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x80"
+          },
+          {
+            "name": "x81",
+            "title": "X81",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x81"
+          },
+          {
+            "name": "x82",
+            "title": "X82",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x82"
+          },
+          {
+            "name": "x83",
+            "title": "X83",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x83"
+          },
+          {
+            "name": "x84",
+            "title": "X84",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x84"
+          },
+          {
+            "name": "x85",
+            "title": "X85",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x85"
+          },
+          {
+            "name": "x86",
+            "title": "X86",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x86"
+          },
+          {
+            "name": "x87",
+            "title": "X87",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x87"
+          },
+          {
+            "name": "x88",
+            "title": "X88",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x88"
+          },
+          {
+            "name": "x89",
+            "title": "X89",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x89"
+          },
+          {
+            "name": "x90",
+            "title": "X90",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x90"
+          },
+          {
+            "name": "x91",
+            "title": "X91",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x91"
+          },
+          {
+            "name": "x92",
+            "title": "X92",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x92"
+          },
+          {
+            "name": "x93",
+            "title": "X93",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x93"
+          },
+          {
+            "name": "x94",
+            "title": "X94",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x94"
+          },
+          {
+            "name": "x95",
+            "title": "X95",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x95"
+          },
+          {
+            "name": "x96",
+            "title": "X96",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x96"
+          },
+          {
+            "name": "x97",
+            "title": "X97",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x97"
+          },
+          {
+            "name": "x98",
+            "title": "X98",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x98"
+          },
+          {
+            "name": "x99",
+            "title": "X99",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x99"
+          },
+          {
+            "name": "x100",
+            "title": "X100",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x100"
+          },
+          {
+            "name": "x101",
+            "title": "X101",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x101"
+          },
+          {
+            "name": "x102",
+            "title": "X102",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x102"
+          },
+          {
+            "name": "x103",
+            "title": "X103",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x103"
+          },
+          {
+            "name": "x104",
+            "title": "X104",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x104"
+          },
+          {
+            "name": "x105",
+            "title": "X105",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x105"
+          },
+          {
+            "name": "x106",
+            "title": "X106",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x106"
+          },
+          {
+            "name": "x107",
+            "title": "X107",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x107"
+          },
+          {
+            "name": "x108",
+            "title": "X108",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x108"
+          },
+          {
+            "name": "x109",
+            "title": "X109",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x109"
+          },
+          {
+            "name": "x110",
+            "title": "X110",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x110"
+          },
+          {
+            "name": "x111",
+            "title": "X111",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x111"
+          },
+          {
+            "name": "x112",
+            "title": "X112",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x112"
+          },
+          {
+            "name": "x113",
+            "title": "X113",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x113"
+          },
+          {
+            "name": "x114",
+            "title": "X114",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x114"
+          },
+          {
+            "name": "x115",
+            "title": "X115",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x115"
+          },
+          {
+            "name": "x116",
+            "title": "X116",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x116"
+          },
+          {
+            "name": "x117",
+            "title": "X117",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x117"
+          },
+          {
+            "name": "x118",
+            "title": "X118",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x118"
+          },
+          {
+            "name": "x119",
+            "title": "X119",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x119"
+          },
+          {
+            "name": "x120",
+            "title": "X120",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x120"
+          },
+          {
+            "name": "x121",
+            "title": "X121",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x121"
+          },
+          {
+            "name": "x122",
+            "title": "X122",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x122"
+          },
+          {
+            "name": "x123",
+            "title": "X123",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x123"
+          },
+          {
+            "name": "x124",
+            "title": "X124",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x124"
+          },
+          {
+            "name": "x125",
+            "title": "X125",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x125"
+          },
+          {
+            "name": "x126",
+            "title": "X126",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x126"
+          },
+          {
+            "name": "x127",
+            "title": "X127",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x127"
+          },
+          {
+            "name": "x128",
+            "title": "X128",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x128"
+          },
+          {
+            "name": "x129",
+            "title": "X129",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x129"
+          },
+          {
+            "name": "x130",
+            "title": "X130",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x130"
+          },
+          {
+            "name": "x131",
+            "title": "X131",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x131"
+          },
+          {
+            "name": "x132",
+            "title": "X132",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x132"
+          },
+          {
+            "name": "x133",
+            "title": "X133",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x133"
+          },
+          {
+            "name": "x134",
+            "title": "X134",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x134"
+          },
+          {
+            "name": "x135",
+            "title": "X135",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x135"
+          },
+          {
+            "name": "x136",
+            "title": "X136",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x136"
+          },
+          {
+            "name": "x137",
+            "title": "X137",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x137"
+          },
+          {
+            "name": "x138",
+            "title": "X138",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x138"
+          },
+          {
+            "name": "x139",
+            "title": "X139",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x139"
+          },
+          {
+            "name": "x140",
+            "title": "X140",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x140"
+          },
+          {
+            "name": "x141",
+            "title": "X141",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x141"
+          },
+          {
+            "name": "x142",
+            "title": "X142",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x142"
+          },
+          {
+            "name": "x143",
+            "title": "X143",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x143"
+          },
+          {
+            "name": "x144",
+            "title": "X144",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x144"
+          },
+          {
+            "name": "x145",
+            "title": "X145",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x145"
+          },
+          {
+            "name": "x146",
+            "title": "X146",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x146"
+          },
+          {
+            "name": "x147",
+            "title": "X147",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x147"
+          },
+          {
+            "name": "x148",
+            "title": "X148",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x148"
+          },
+          {
+            "name": "x149",
+            "title": "X149",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x149"
+          },
+          {
+            "name": "x150",
+            "title": "X150",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x150"
+          },
+          {
+            "name": "x151",
+            "title": "X151",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x151"
+          },
+          {
+            "name": "x152",
+            "title": "X152",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x152"
+          },
+          {
+            "name": "x153",
+            "title": "X153",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x153"
+          },
+          {
+            "name": "x154",
+            "title": "X154",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x154"
+          },
+          {
+            "name": "x155",
+            "title": "X155",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x155"
+          },
+          {
+            "name": "x156",
+            "title": "X156",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x156"
+          },
+          {
+            "name": "x157",
+            "title": "X157",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x157"
+          },
+          {
+            "name": "x158",
+            "title": "X158",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x158"
+          },
+          {
+            "name": "x159",
+            "title": "X159",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x159"
+          },
+          {
+            "name": "x160",
+            "title": "X160",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x160"
+          },
+          {
+            "name": "x161",
+            "title": "X161",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x161"
+          },
+          {
+            "name": "x162",
+            "title": "X162",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x162"
+          },
+          {
+            "name": "x163",
+            "title": "X163",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x163"
+          },
+          {
+            "name": "x164",
+            "title": "X164",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x164"
+          },
+          {
+            "name": "x165",
+            "title": "X165",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x165"
+          },
+          {
+            "name": "x166",
+            "title": "X166",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x166"
+          },
+          {
+            "name": "x167",
+            "title": "X167",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x167"
+          },
+          {
+            "name": "x168",
+            "title": "X168",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x168"
+          },
+          {
+            "name": "x169",
+            "title": "X169",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x169"
+          },
+          {
+            "name": "x170",
+            "title": "X170",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x170"
+          },
+          {
+            "name": "x171",
+            "title": "X171",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x171"
+          },
+          {
+            "name": "x172",
+            "title": "X172",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x172"
+          },
+          {
+            "name": "x173",
+            "title": "X173",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x173"
+          },
+          {
+            "name": "x174",
+            "title": "X174",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x174"
+          },
+          {
+            "name": "x175",
+            "title": "X175",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x175"
+          },
+          {
+            "name": "x176",
+            "title": "X176",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x176"
+          },
+          {
+            "name": "x177",
+            "title": "X177",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x177"
+          },
+          {
+            "name": "x178",
+            "title": "X178",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "x178"
+          },
+          {
+            "name": "y",
+            "title": "y",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+            "dwSourceId": "y"
+          }
+        ]
+      },
+      "path": "data/data.csv",
+      "format": "csv"
+    },
+    {
+      "name": "original/data.csv",
+      "path": "original/data.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 7635689
+    }
+  ],
+  "keywords": [
+    "uci",
+    "life",
+    "integer",
+    "real",
+    "classification",
+    "clustering"
+  ]
+}
