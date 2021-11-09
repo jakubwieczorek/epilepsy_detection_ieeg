@@ -2,7 +2,7 @@
 
 clear all
 
-[x, y] = parse_csv('../../dataset/data/data.csv');
+[x, y] = parse_csv('../dataset/data/data.csv');
 
 for i=1:numel(y)
     if y(i)~=1
