@@ -5,7 +5,7 @@
 % amount of coefficients (1, ..., 50)
 
 clear all
-
+addpath('..')
 [x, y] = parse_csv('../../dataset/data/data.csv');
 
 

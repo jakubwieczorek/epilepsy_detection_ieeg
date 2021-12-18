@@ -169,9 +169,9 @@ def train_raw():
     val_accuracies = []
     val_losses = []
 
-    for i in range(10, 200):
+    for i in range(10, 200):  # 10 to 200 nodes
         nn.createModel(i)
-        nn.trainModel(300)
+        nn.trainModel(300)  # 300 epochs
         cur_result_dir = result_dir.format(neurons=i)
         nn.saveModel(cur_result_dir)
 
@@ -182,7 +182,7 @@ def train_raw():
         losses.append([i, max(nn.history.history['loss'])])
         val_accuracies.append([i, max(nn.history.history['val_accuracy'])])
         val_losses.append([i, max(nn.history.history['val_loss'])])
-        nn.makeSomePrediction(cur_result_dir + "train_result.csv")
+        nn.makeSomePrediction(cur_result_dir + "test_result.csv")
 
     accuracies = sorted(accuracies, key=lambda x: x[1], reverse=True)
     losses = sorted(losses, key=lambda x: x[1])

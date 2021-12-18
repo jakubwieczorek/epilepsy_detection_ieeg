@@ -10,8 +10,5 @@ for i=1:numel(y)
     end
 end
 
-fs = width(x);
-sec = height(y);
-
 max_value = max(max(x));
 writematrix([rescale(x, 'InputMax', max_value*4/5), y], 'raw.csv')
