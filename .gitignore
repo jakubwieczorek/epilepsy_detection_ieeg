@@ -4,3 +4,5 @@ SWEC-ETH/data
 /MATLAB/lbp/02/test_data/
 /cnn/tensorflow/lbp/ID02/model/
 /cnn/tensorflow/raw/dataset/ID02/
+*.o
+*.out

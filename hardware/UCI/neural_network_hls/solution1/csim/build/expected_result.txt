@@ -1,0 +1,17 @@
+0: expected: 1, actual 0.999878
+1: expected: 0, actual 0.151049
+2: expected: 1, actual 1.000000
+3: expected: 0, actual 0.041512
+4: expected: 0, actual 0.008661
+5: expected: 0, actual 0.015273
+6: expected: 0, actual 0.013550
+7: expected: 0, actual 0.003992
+8: expected: 0, actual 0.016900
+9: expected: 1, actual 0.780592
+10: expected: 0, actual 0.030490
+11: expected: 0, actual 0.005216
+12: expected: 1, actual 0.999879
+13: expected: 0, actual 0.661528
+14: expected: 0, actual 0.078293
+15: expected: 0, actual 0.027666
+16: expected: 0, actual 0.005282

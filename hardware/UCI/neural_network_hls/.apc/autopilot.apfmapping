@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="feedforward.cpp" path="/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_hls/feedforward.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_hls/main.cpp"/>
+    <originFiles name="expected_result.txt" path="/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_hls/expected_result.txt"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,19 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/sim/design_1.vhd" \
+"../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/vhdl/feedforward_b1.vhd" \
+"../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/vhdl/feedforward_CTRL_BUS_s_axi.vhd" \
+"../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/vhdl/feedforward_fadd_32ns_32ns_32_5_full_dsp_1.vhd" \
+"../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/vhdl/feedforward_fcmp_32ns_32ns_1_2_no_dsp_1.vhd" \
+"../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/vhdl/feedforward_fdiv_32ns_32ns_32_16_no_dsp_1.vhd" \
+"../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/vhdl/feedforward_fexp_32ns_32ns_32_9_full_dsp_1.vhd" \
+"../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/vhdl/feedforward_fmul_32ns_32ns_32_4_max_dsp_1.vhd" \
+"../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/vhdl/feedforward_l1y.vhd" \
+"../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/vhdl/feedforward_w1.vhd" \
+"../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/vhdl/feedforward_w2_0.vhd" \
+"../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/vhdl/feedforward_wy_sum.vhd" \
+"../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/vhdl/feedforward.vhd" \
+"../../../bd/design_1/ip/design_1_axi_bram_ctrl_0_0/sim/design_1_axi_bram_ctrl_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_bram_ctrl_0_1/sim/design_1_axi_bram_ctrl_0_1.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
+
+nosort

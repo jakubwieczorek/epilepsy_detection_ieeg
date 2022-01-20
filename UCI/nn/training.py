@@ -162,6 +162,7 @@ def train_raw():
     result_dir = "./raw/{neurons}/model/"
     best_result_dir = "./raw/best_results.csv"
 
+    # create MLP with 178 inputs
     nn = FeedForward(data_file, 178)  # 178 is the amount of samples
 
     accuracies = []
@@ -172,18 +173,23 @@ def train_raw():
     for i in range(10, 200):  # 10 to 200 nodes
         nn.createModel(i)
         nn.trainModel(300)  # 300 epochs
+
+        # save the history and model
         cur_result_dir = result_dir.format(neurons=i)
         nn.saveModel(cur_result_dir)
-
         json.dump(nn.history.history, open(cur_result_dir + "history.json", 'w'))
         json.dump(nn.history.params, open(cur_result_dir + "params.json", 'w'))
 
+        # populate the metrics for the current MLP
         accuracies.append([i, max(nn.history.history['accuracy'])])
         losses.append([i, max(nn.history.history['loss'])])
         val_accuracies.append([i, max(nn.history.history['val_accuracy'])])
         val_losses.append([i, max(nn.history.history['val_loss'])])
+
+        # test MLP on the testing data
         nn.makeSomePrediction(cur_result_dir + "test_result.csv")
 
+    # sort and save the metrics, to choose the best MLP
     accuracies = sorted(accuracies, key=lambda x: x[1], reverse=True)
     losses = sorted(losses, key=lambda x: x[1])
     val_losses = sorted(val_losses, key=lambda x: x[1])
