@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:hls:feedforward:1.0
--- IP Revision: 2101192139
+-- IP Revision: 2101282306
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -142,7 +142,7 @@ ARCHITECTURE design_1_feedforward_0_0_arch OF design_1_feedforward_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_feedforward_0_0_arch : ARCHITECTURE IS "design_1_feedforward_0_0,feedforward,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_feedforward_0_0_arch: ARCHITECTURE IS "design_1_feedforward_0_0,feedforward,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=feedforward,x_ipVersion=1.0,x_ipCoreRevision=2101192139,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL,C_S_AXI_CTRL_BUS_ADDR_WIDTH=4,C_S_AXI_CTRL_BUS_DATA_WIDTH=32}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_feedforward_0_0_arch: ARCHITECTURE IS "design_1_feedforward_0_0,feedforward,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=feedforward,x_ipVersion=1.0,x_ipCoreRevision=2101282306,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL,C_S_AXI_CTRL_BUS_ADDR_WIDTH=4,C_S_AXI_CTRL_BUS_DATA_WIDTH=32}";
   ATTRIBUTE SDX_KERNEL : STRING;
   ATTRIBUTE SDX_KERNEL OF feedforward: COMPONENT IS "true";
   ATTRIBUTE SDX_KERNEL_TYPE : STRING;

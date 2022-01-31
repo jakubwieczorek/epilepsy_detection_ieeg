@@ -16,7 +16,6 @@ function [x, y] = best_results(path, title_name)
     stairs(accuracy(:, 1), accuracy(:, 2), 'r');
     title('Accuracy')
     grid on
-    xlabel('Nodes No')
     ylabel('Accuracy')
 
 
@@ -24,7 +23,6 @@ function [x, y] = best_results(path, title_name)
     stairs(loss(:, 1), loss(:, 2), 'r');
     title('Loss')
     grid on
-    xlabel('Nodes No')
     ylabel('loss')
 
 

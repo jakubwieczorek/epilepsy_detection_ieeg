@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -93,12 +94,15 @@ read_vhdl -library xil_defaultlib /home/jakub/Documents/PyCharmProjects/epilepsy
 add_files /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vivado/neural_network_vivado.srcs/sources_1/bd/design_1/design_1.bd
 set_property used_in_implementation false [get_files -all /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vivado/neural_network_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vivado/neural_network_vivado.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vivado/neural_network_vivado.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vivado/neural_network_vivado.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vivado/neural_network_vivado.gen/sources_1/bd/design_1/ip/design_1_feedforward_0_0/constraints/feedforward_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vivado/neural_network_vivado.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_1/design_1_blk_mem_gen_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vivado/neural_network_vivado.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vivado/neural_network_vivado.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc]
+set_property used_in_implementation false [get_files -all /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vivado/neural_network_vivado.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0_1/design_1_axi_timer_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vivado/neural_network_vivado.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0_1/design_1_axi_timer_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vivado/neural_network_vivado.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vivado/neural_network_vivado.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vivado/neural_network_vivado.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vivado/neural_network_vivado.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }

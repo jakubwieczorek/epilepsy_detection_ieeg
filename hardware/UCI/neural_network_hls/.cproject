@@ -157,6 +157,8 @@
                         					
                     </folderInfo>
                     					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1374229570.1616798300" name="expected_result2.txt" rcbsApplicability="disable" resourcePath="testbench/expected_result2.txt" toolsToInvoke=""/>
+                    					
                     <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1374229570.2146947578" name="main.cpp" rcbsApplicability="disable" resourcePath="testbench/main.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1855408816.550986519">
                         						
                         <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1855408816.550986519" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1855408816">
@@ -336,6 +338,8 @@
                         </toolChain>
                         					
                     </folderInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.427954159.996772907" name="expected_result2.txt" rcbsApplicability="disable" resourcePath="testbench/expected_result2.txt" toolsToInvoke=""/>
                     					
                     <fileInfo id="cdt.managedbuild.config.gnu.exe.release.427954159.1739719802" name="main.cpp" rcbsApplicability="disable" resourcePath="testbench/main.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.915876695.660374899">
                         						

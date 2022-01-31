@@ -1,0 +1,4 @@
+Running: xsim.dir/feedforward/xsimk -simmode gui -wdb feedforward.wdb -simrunnum 0 -socket 34153
+Design successfully loaded
+Design Loading Memory Usage: 47808 KB (Peak: 47940 KB)
+Design Loading CPU Usage: 100 ms

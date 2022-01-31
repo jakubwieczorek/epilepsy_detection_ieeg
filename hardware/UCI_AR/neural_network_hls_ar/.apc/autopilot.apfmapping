@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="w2.h" path="/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI_AR/neural_network_hls_ar/w2.h"/>
+    <originFiles name="w1.h" path="/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI_AR/neural_network_hls_ar/w1.h"/>
+    <originFiles name="feedforward.h" path="/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI_AR/neural_network_hls_ar/feedforward.h"/>
+    <originFiles name="feedforward.cpp" path="/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI_AR/neural_network_hls_ar/feedforward.cpp"/>
+    <originFiles name="b2.h" path="/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI_AR/neural_network_hls_ar/b2.h"/>
+    <originFiles name="b1.h" path="/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI_AR/neural_network_hls_ar/b1.h"/>
+  </source>
+  <testbench>
+    <originFiles name="val_labels.h" path="/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI_AR/neural_network_hls_ar/val_labels.h"/>
+    <originFiles name="val_data.h" path="/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI_AR/neural_network_hls_ar/val_data.h"/>
+    <originFiles name="test_labels.h" path="/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI_AR/neural_network_hls_ar/test_labels.h"/>
+    <originFiles name="test_data.h" path="/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI_AR/neural_network_hls_ar/test_data.h"/>
+    <originFiles name="main.cpp" path="/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI_AR/neural_network_hls_ar/main.cpp"/>
+    <originFiles name="expected_result2.txt" path="/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI_AR/neural_network_hls_ar/expected_result2.txt"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

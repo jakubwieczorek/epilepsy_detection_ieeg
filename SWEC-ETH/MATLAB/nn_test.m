@@ -9,11 +9,14 @@
 % T =  readtable(strcat('../cnn/tensorflow/lbp/ID08/train_result.csv'));
 % T2 = readtable(strcat('../cnn/tensorflow/lbp/ID08/test_result.csv'));
 
-%T =  readtable(strcat('../cnn/tensorflow/entropy/ID02/train_result.csv'));
-%T2 = readtable(strcat('../cnn/tensorflow/entropy/ID02/test_result.csv'));
+T =  readtable(strcat('../cnn/tensorflow/lbp/ID02/model_loss_0.0022/train_result.csv'));
+T2 = readtable(strcat('../cnn/tensorflow/lbp/ID02/model_loss_0.0022/test_result.csv'));
 
-% T =  readtable(strcat('../cnn/tensorflow/entropy/ID08/train_result.csv'));
-% T2 = readtable(strcat('../cnn/tensorflow/entropy/ID08/test_result.csv'));
+% T =  readtable(strcat('../cnn/tensorflow/entropy/ID02/train_result.csv'));
+% T2 = readtable(strcat('../cnn/tensorflow/entropy/ID02/test_result.csv'));
+
+% T =  readtable(strcat('../cnn/tensorflow/entropy/ID08/model_loss_4.1146e-04/train_result.csv'));
+% T2 = readtable(strcat('../cnn/tensorflow/entropy/ID08/model_loss_4.1146e-04/test_result.csv'));
 
 %T =  readtable(strcat('../neural_network/raw/train_result.csv'));
 %T2 = readtable(strcat('../neural_network/raw/test_result.csv'));

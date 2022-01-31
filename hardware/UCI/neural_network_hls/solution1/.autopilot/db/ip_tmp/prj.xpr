@@ -6,7 +6,7 @@
 <Project Version="7" Minor="54" Path="/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_hls/solution1/.autopilot/db/ip_tmp/prj.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="e6e09a9b1f8643f280c946c6214dc07e"/>
+    <Option Name="Id" Val="519b094e824b48f7bf58aea093df922e"/>
     <Option Name="Part" Val="xc7z020clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>

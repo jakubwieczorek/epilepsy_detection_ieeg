@@ -1,0 +1,130 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include <xfeedforward.h>
+#include "sample.h"
+#include"test_data.h"
+#include"test_labels.h"
+#include "xil_types.h"
+#include "xtmrctr.h"
+#include "xparameters.h"
+
+#define dataset_size 1150
+
+XFeedforward xFeedforward;
+XFeedforward_Config *xFeedforward_cfg;
+
+float *xBRAM = (float *)0x40000000;
+float *yBRAM = (float *)0x42000000;
+
+float bin_accuracy(float predicted[], float expected[], int size) {
+	float sum = 0;
+
+	for(int i = 0; i < size; i++) {
+		predicted[i] = predicted[i] > 0.5;
+		sum += predicted[i] == expected[i];
+	}
+
+	return sum/size;
+}
+
+
+void init_Feedforward() {
+	int status=0;
+	xFeedforward_cfg = XFeedforward_LookupConfig(XPAR_FEEDFORWARD_0_DEVICE_ID);
+	if (xFeedforward_cfg) {
+		status = XFeedforward_CfgInitialize(&xFeedforward, xFeedforward_cfg);
+		if (status != XST_SUCCESS) {printf("Failed to initialize xFeedforward\n");}
+		else {printf("Successfully initialized xFeedforward\n");}
+	}
+}
+
+void init_data(int signal) {
+	for(int i=0; i<178; i++) {
+		xBRAM[i] = dataset[signal][i];
+	}
+}
+
+void init_data2(int signal) {
+	for(int i=0; i<178; i++) {
+		xBRAM[i] = test_data[signal][i];
+	}
+}
+
+int test2() {
+    float test_predicted[dataset_size] = {0};
+
+	for(int i = 0; i<dataset_size; i++) {
+		init_data2(i);
+		XFeedforward_Start(&xFeedforward);
+		while(!XFeedforward_IsDone(&xFeedforward));
+		printf("%d: expected: %f, actual %f\n", i, test_labels[i], yBRAM[0]);
+		test_predicted[i] = yBRAM[0];
+	}
+
+	float accuracy = bin_accuracy(test_predicted, test_labels, dataset_size);
+
+	printf("Accuracy %f\n", accuracy);
+
+	return 0;
+}
+
+XTmrCtr AXI_Timer;
+double m_clockPeriodSeconds;
+unsigned int m_tickCounter1;
+unsigned int m_tickCounter2;
+
+void AXI_Timer_Init() {
+	XTmrCtr_Initialize(&AXI_Timer, XPAR_TMRCTR_0_DEVICE_ID);
+
+	m_clockPeriodSeconds = (double)1/(double)XPAR_AXI_TIMER_0_CLOCK_FREQ_HZ;
+}
+
+
+void AXI_Timer_Reset() {
+	XTmrCtr_Reset(&AXI_Timer, 0);
+}
+
+unsigned int AXI_Timer_Start() {
+	m_tickCounter1 = XTmrCtr_GetValue(&AXI_Timer, 0);
+	XTmrCtr_Start(&AXI_Timer, 0);
+	return m_tickCounter1;
+}
+
+unsigned int AXI_Timer_Stop() {
+	XTmrCtr_Stop(&AXI_Timer, 0);
+	m_tickCounter2 = XTmrCtr_GetValue(&AXI_Timer, 0);
+	return m_tickCounter2 - m_tickCounter1;
+}
+
+double getElapsedTimerInSeconds() {
+	return (double)(m_tickCounter2 - m_tickCounter1) * m_clockPeriodSeconds;
+}
+
+int main(void) {
+	XTmrCtr_Initialize(&AXI_Timer, XPAR_TMRCTR_0_DEVICE_ID);
+
+	printf("Feedforward test for EEG signals\n");
+	printf("START init_Feedforward\n");
+	init_Feedforward();
+	AXI_Timer_Reset();
+	for(int i=0; i<17; i++) {
+		init_data(i);
+
+		XTmrCtr_Start(&AXI_Timer, 0);
+
+		XFeedforward_Start(&xFeedforward);
+		while(!XFeedforward_IsDone(&xFeedforward));
+
+		XTmrCtr_Stop(&AXI_Timer, 0);
+		printf("%f seconds\n",XTmrCtr_GetValue(&AXI_Timer, 0));
+
+		printf("%d: expected: %d, actual %f\n", i, expected[i], yBRAM[0]);
+	}
+
+//    printf("%f seconds\n", getElapsedTimerInSeconds());
+
+//	test2();
+
+    return 0;
+}

@@ -1,0 +1,37 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sat Jan 29 09:52:27 2022
+| Host         : jakub-Lenovo-G50-80 running 64-bit Ubuntu 20.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_feedforward_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_feedforward_0_0 (xilinx.com:hls:feedforward:1.0) from (Rev. 2101192139) to (Rev. 2101282306)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sat Jan 29 09:35:59 2022
+| Host         : jakub-Lenovo-G50-80 running 64-bit Ubuntu 20.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_feedforward_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_feedforward_0_0 (xilinx.com:hls:feedforward:1.0) from (Rev. 2101192139) to (Rev. 2101282306)
+

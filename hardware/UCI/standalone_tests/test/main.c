@@ -5,8 +5,14 @@
 #include"sample.h"
 #include<math.h>
 #include<stdio.h>
+#include"val_data.h"
+#include"val_labels.h"
+#include"test_data.h"
+#include"test_labels.h"
 
-void test2(const double weights_matrix[], int row, int col)
+#define data_size 1150
+
+void test2(const float weights_matrix[], int row, int col)
 {
 	int i, j;
 	for(i=0; i<row; i++){
@@ -18,10 +24,10 @@ void test2(const double weights_matrix[], int row, int col)
 }
 
 // weights_matrix[], not [][], because second dimension has to be specified
-void feedforward(const double x[], const double weights_matrix[], int ROW, int COL, const double biases[], double y[], double (*activationFunction)(double))
+void feedforward(const float x[], const float weights_matrix[], int ROW, int COL, const float biases[], float y[], float (*activationFunction)(float))
 {
 	int o, i;
-	double cur_w;
+	float cur_w;
 
 		for(i = 0; i < ROW; i++)
 	{
@@ -39,7 +45,7 @@ void feedforward(const double x[], const double weights_matrix[], int ROW, int C
 	}
 }
 
-double ReLU(double x)
+float ReLU(float x)
 {
 	if(x < 0) {
 		return 0.0;
@@ -48,30 +54,45 @@ double ReLU(double x)
 	}
 }
 
-double sigmoid(double x)
+float sigmoid(float x)
 {
-	return 1.0 / (1.0 + (double)exp(-x));
+	return 1.0 / (1.0 + (float)exp(-x));
 }
 
-void think(double x[], double y[], double z[])
+void think(float x[], float y[], float z[])
 {
-	double l1_output[72] = {0};
+	float l1_output[72] = {0};
 	feedforward(x        , w1[0], 178, 72, b1, l1_output, &ReLU);
 	feedforward(l1_output,  w2[0], 72, 1,  b2, y, &sigmoid);
 }
 
-int main(void)
-{
-	double y[1] = {0};
-	double z[1] = {0};
+float bin_accuracy(float predicted[], float expected[], int size) {
+	float sum = 0;
 
-	think(one, y, z);
-
-	for(int i = 0; i < 1; i++)
-	{
-		printf("%f\n", y[i]);
+	for(int i = 0; i < size; i++) {
+		predicted[i] = predicted[i] > 0.5;
+		sum += predicted[i] == expected[i];
 	}
 
+	return sum/size;
+}
+
+int main(void)
+{
+	float y[1] = {0};
+	float z[1] = {0};
+	float test_predicted[data_size] = {0};
+
+	for(int i = 0; i < data_size; i++)
+	{
+		think(test_data[i], y, z);
+		test_predicted[i] = y[0];
+		printf("%f\n", test_predicted[i]);
+	}
+	
+	float accuracy = bin_accuracy(test_predicted, test_labels, data_size);
+
+	printf("Accuracy %f\n", accuracy);
 	return 0;
 }
 

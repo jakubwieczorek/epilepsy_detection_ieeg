@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Jan 19 21:39:11 2021
-# Process ID: 31179
+# Start of session at: Thu Jan 28 23:06:43 2021
+# Process ID: 10507
 # Current directory: /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_hls/solution1/impl/ip
 # Command line: vivado -notrace -mode batch -source run_ippack.tcl
 # Log file: /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_hls/solution1/impl/ip/vivado.log
@@ -14,7 +14,6 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/jakub/apps/Xilinx/Vivado/2020.2/data/ip'.
 WARNING: [IP_Flow 19-4832] The IP name 'feedforward_ap_fadd_3_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-create_ip: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2253.402 ; gain = 43.016 ; free physical = 624 ; free virtual = 8972
 INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'feedforward_ap_fadd_3_full_dsp_32'...
 INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'feedforward_ap_fadd_3_full_dsp_32'...
 WARNING: [IP_Flow 19-4832] The IP name 'feedforward_ap_fcmp_0_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
@@ -32,4 +31,4 @@ INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'feedforward_ap_fm
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/jakub/apps/Xilinx/Vivado/2020.2/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Tue Jan 19 21:39:51 2021...
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 28 23:07:15 2021...

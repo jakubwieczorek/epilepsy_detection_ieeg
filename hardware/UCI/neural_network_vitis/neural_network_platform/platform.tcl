@@ -16,3 +16,15 @@ platform write
 platform generate -domains 
 platform active {neural_network_platform}
 platform generate
+platform clean
+platform generate
+platform active {neural_network_platform}
+platform config -updatehw {/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vivado/design_1_wrapper.xsa}
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform active {neural_network_platform}
+platform generate -domains 

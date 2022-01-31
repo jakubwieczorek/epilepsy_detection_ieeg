@@ -52,6 +52,11 @@
 			<location>/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_hls/expected_result.txt</location>
 		</link>
 		<link>
+			<name>testbench/expected_result2.txt</name>
+			<type>1</type>
+			<location>/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_hls/expected_result2.txt</location>
+		</link>
+		<link>
 			<name>testbench/main.cpp</name>
 			<type>1</type>
 			<location>/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_hls/main.cpp</location>

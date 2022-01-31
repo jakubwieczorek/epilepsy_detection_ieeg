@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI_AR/neural_network_hls_ar/solution1/./sim/autowrap/testbench/feedforward.cpp_pre.cpp.tb.cpp

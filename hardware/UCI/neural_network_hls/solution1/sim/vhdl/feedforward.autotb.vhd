@@ -24,7 +24,7 @@ entity apatb_feedforward_top is
       AUTOTB_PER_RESULT_TRANS_FILE    : STRING  := "feedforward.performance.result.transaction.xml";
       LENGTH_x     : INTEGER := 178;
       LENGTH_y     : INTEGER := 2;
-	    AUTOTB_TRANSACTION_NUM    : INTEGER := 17
+	    AUTOTB_TRANSACTION_NUM    : INTEGER := 1167
 );
 
 end apatb_feedforward_top;

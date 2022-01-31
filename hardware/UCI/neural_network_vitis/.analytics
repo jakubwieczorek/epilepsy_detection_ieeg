@@ -10,3 +10,72 @@ timestamp=[2022-01-20 11:26:55], mode=BUILD, duration=0:00:01.315, duration_ms=1
 timestamp=[2022-01-20 11:27:06], mode=BUILD, duration=0:00:10.054, duration_ms=10054, data={name=neural_network_application_system, configuration=Debug, clean_build=false}
 timestamp=[2022-01-20 11:34:57], mode=BUILD, duration=0:00:01.403, duration_ms=1403, data={name=neural_network_application, configuration=Debug, clean_build=false}
 timestamp=[2022-01-20 11:35:10], mode=BUILD, duration=0:00:10.732, duration_ms=10732, data={name=neural_network_application_system, configuration=Debug, clean_build=false}
+timestamp=[2022-01-28 15:05:25], mode=WORKBENCH_START, duration=0:00:18.037, duration_ms=18037, data={}
+timestamp=[2022-01-28 15:05:25], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.060, duration_ms=60, data={}
+timestamp=[2022-01-28 15:05:28], mode=WORKBENCH_UI_INIT, duration=0:00:03.011, duration_ms=3011, data={editors_count=8, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,neural_network_application,neural_network_application_system,neural_network_platform}
+timestamp=[2022-01-28 15:15:14], mode=BUILD, duration=0:00:00.926, duration_ms=926, data={name=neural_network_application, configuration=Debug, clean_build=true}
+timestamp=[2022-01-28 15:15:15], mode=BUILD, duration=0:00:01.170, duration_ms=1170, data={name=neural_network_application, configuration=Debug, clean_build=false}
+timestamp=[2022-01-28 15:15:30], mode=BUILD, duration=0:00:12.799, duration_ms=12799, data={name=neural_network_application_system, configuration=Debug, clean_build=false}
+timestamp=[2022-01-28 15:16:02], mode=BUILD, duration=0:00:02.414, duration_ms=2414, data={name=neural_network_application, configuration=Debug, clean_build=false}
+timestamp=[2022-01-28 15:16:54], mode=BUILD, duration=0:00:02.190, duration_ms=2190, data={name=neural_network_application, configuration=Debug, clean_build=false}
+timestamp=[2022-01-28 15:17:34], mode=PLATFORM_GENERATION, duration=0:00:10.714, duration_ms=10714, data={name=neural_network_platform}
+timestamp=[2022-01-28 15:17:34], mode=BUILD, duration=0:00:00.752, duration_ms=752, data={name=neural_network_application, configuration=Debug, clean_build=true}
+timestamp=[2022-01-28 15:17:35], mode=BUILD, duration=0:00:00.917, duration_ms=917, data={name=neural_network_application_system, configuration=Debug, clean_build=true}
+timestamp=[2022-01-28 15:18:15], mode=PLATFORM_GENERATION, duration=0:00:23.775, duration_ms=23775, data={name=neural_network_platform}
+timestamp=[2022-01-28 15:18:21], mode=BUILD, duration=0:00:02.535, duration_ms=2535, data={name=neural_network_application, configuration=Debug, clean_build=false}
+timestamp=[2022-01-28 15:18:33], mode=BUILD, duration=0:00:10.412, duration_ms=10412, data={name=neural_network_application_system, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 10:18:13], mode=WORKBENCH_START, duration=0:00:39.388, duration_ms=39388, data={}
+timestamp=[2022-01-29 10:18:13], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.112, duration_ms=112, data={}
+timestamp=[2022-01-29 10:18:16], mode=WORKBENCH_UI_INIT, duration=0:00:03.106, duration_ms=3106, data={editors_count=9, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,neural_network_application,neural_network_application_system,neural_network_platform}
+timestamp=[2022-01-29 10:20:12], mode=PLATFORM_GENERATION, duration=0:00:09.769, duration_ms=9769, data={name=neural_network_platform}
+timestamp=[2022-01-29 10:21:17], mode=PLATFORM_GENERATION, duration=0:00:37.358, duration_ms=37358, data={name=neural_network_platform}
+timestamp=[2022-01-29 10:23:05], mode=PLATFORM_GENERATION, duration=0:00:09.115, duration_ms=9115, data={name=neural_network_platform}
+timestamp=[2022-01-29 10:23:05], mode=BUILD, duration=0:00:00.764, duration_ms=764, data={name=neural_network_application, configuration=Debug, clean_build=true}
+timestamp=[2022-01-29 10:23:06], mode=BUILD, duration=0:00:00.885, duration_ms=885, data={name=neural_network_application_system, configuration=Debug, clean_build=true}
+timestamp=[2022-01-29 10:23:40], mode=PLATFORM_GENERATION, duration=0:00:25.117, duration_ms=25117, data={name=neural_network_platform}
+timestamp=[2022-01-29 10:23:46], mode=BUILD, duration=0:00:02.260, duration_ms=2260, data={name=neural_network_application, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 10:24:05], mode=BUILD, duration=0:00:10.072, duration_ms=10072, data={name=neural_network_application_system, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 10:29:55], mode=BUILD, duration=0:00:02.641, duration_ms=2641, data={name=neural_network_application, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 10:57:54], mode=WORKBENCH_START, duration=0:00:17.112, duration_ms=17112, data={}
+timestamp=[2022-01-29 10:57:55], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.068, duration_ms=68, data={}
+timestamp=[2022-01-29 10:57:58], mode=WORKBENCH_UI_INIT, duration=0:00:03.536, duration_ms=3536, data={editors_count=9, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,neural_network_application,neural_network_application_system,neural_network_platform}
+timestamp=[2022-01-29 11:06:04], mode=BUILD, duration=0:00:02.080, duration_ms=2080, data={name=neural_network_application, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:06:20], mode=BUILD, duration=0:00:14.875, duration_ms=14875, data={name=neural_network_application_system, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:14:46], mode=BUILD, duration=0:00:00.855, duration_ms=855, data={name=neural_network_application, configuration=Debug, clean_build=true}
+timestamp=[2022-01-29 11:14:48], mode=BUILD, duration=0:00:01.716, duration_ms=1716, data={name=neural_network_application, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:14:58], mode=BUILD, duration=0:00:08.257, duration_ms=8257, data={name=neural_network_application_system, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:15:08], mode=PLATFORM_GENERATION, duration=0:00:10.280, duration_ms=10280, data={name=neural_network_platform}
+timestamp=[2022-01-29 11:15:09], mode=BUILD, duration=0:00:00.740, duration_ms=740, data={name=neural_network_application, configuration=Debug, clean_build=true}
+timestamp=[2022-01-29 11:15:10], mode=BUILD, duration=0:00:00.734, duration_ms=734, data={name=neural_network_application_system, configuration=Debug, clean_build=true}
+timestamp=[2022-01-29 11:15:45], mode=PLATFORM_GENERATION, duration=0:00:25.191, duration_ms=25191, data={name=neural_network_platform}
+timestamp=[2022-01-29 11:15:50], mode=BUILD, duration=0:00:02.335, duration_ms=2335, data={name=neural_network_application, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:16:00], mode=BUILD, duration=0:00:08.168, duration_ms=8168, data={name=neural_network_application_system, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:16:23], mode=BUILD, duration=0:00:01.899, duration_ms=1899, data={name=neural_network_application, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:16:32], mode=BUILD, duration=0:00:07.671, duration_ms=7671, data={name=neural_network_application_system, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:16:49], mode=BUILD, duration=0:00:02.476, duration_ms=2476, data={name=neural_network_application, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:17:01], mode=BUILD, duration=0:00:10.132, duration_ms=10132, data={name=neural_network_application_system, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:22:27], mode=BUILD, duration=0:00:02.428, duration_ms=2428, data={name=neural_network_application, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:22:38], mode=BUILD, duration=0:00:09.876, duration_ms=9876, data={name=neural_network_application_system, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:29:19], mode=BUILD, duration=0:00:02.158, duration_ms=2158, data={name=neural_network_application, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:29:31], mode=BUILD, duration=0:00:09.804, duration_ms=9804, data={name=neural_network_application_system, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:30:44], mode=BUILD, duration=0:00:02.120, duration_ms=2120, data={name=neural_network_application, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:30:56], mode=BUILD, duration=0:00:10.055, duration_ms=10055, data={name=neural_network_application_system, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:34:50], mode=BUILD, duration=0:00:02.192, duration_ms=2192, data={name=neural_network_application, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:35:02], mode=BUILD, duration=0:00:09.810, duration_ms=9810, data={name=neural_network_application_system, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:38:21], mode=BUILD, duration=0:00:02.157, duration_ms=2157, data={name=neural_network_application, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:38:33], mode=BUILD, duration=0:00:09.751, duration_ms=9751, data={name=neural_network_application_system, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:41:36], mode=BUILD, duration=0:00:02.052, duration_ms=2052, data={name=neural_network_application, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:41:47], mode=BUILD, duration=0:00:09.822, duration_ms=9822, data={name=neural_network_application_system, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:48:07], mode=PLATFORM_GENERATION, duration=0:00:07.805, duration_ms=7805, data={name=neural_network_platform}
+timestamp=[2022-01-29 11:48:11], mode=BUILD, duration=0:00:01.895, duration_ms=1895, data={name=neural_network_application, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:48:23], mode=BUILD, duration=0:00:09.958, duration_ms=9958, data={name=neural_network_application_system, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:48:47], mode=BUILD, duration=0:00:02.299, duration_ms=2299, data={name=neural_network_application, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:48:57], mode=BUILD, duration=0:00:08.341, duration_ms=8341, data={name=neural_network_application_system, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:49:26], mode=BUILD, duration=0:00:01.949, duration_ms=1949, data={name=neural_network_application, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 11:49:38], mode=BUILD, duration=0:00:09.851, duration_ms=9851, data={name=neural_network_application_system, configuration=Debug, clean_build=false}
+timestamp=[2022-01-29 18:24:03], mode=WORKBENCH_START, duration=0:00:23.406, duration_ms=23406, data={}
+timestamp=[2022-01-29 18:24:04], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.106, duration_ms=106, data={}
+timestamp=[2022-01-29 18:24:07], mode=WORKBENCH_UI_INIT, duration=0:00:03.130, duration_ms=3130, data={editors_count=9, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,neural_network_application,neural_network_application_system,neural_network_platform}
+timestamp=[2022-01-31 17:45:15], mode=WORKBENCH_START, duration=0:00:19.773, duration_ms=19773, data={}
+timestamp=[2022-01-31 17:45:16], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.061, duration_ms=61, data={}
+timestamp=[2022-01-31 17:45:20], mode=WORKBENCH_UI_INIT, duration=0:00:04.633, duration_ms=4633, data={editors_count=10, platform_editors_count=4, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=RemoteSystemsTempFiles,neural_network_application,neural_network_application_system,neural_network_platform}

@@ -151,3 +151,770 @@ con
 
 11:35:38 INFO  : Launch script is exported to file '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application_system/_ide/scripts/systemdebugger_neural_network_application_system_standalone.tcl'
 12:22:27 INFO  : Disconnected from the channel tcfchan#7.
+15:05:17 INFO  : Launching XSCT server: xsct -n  -interactive /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/temp_xsdb_launch_script.tcl
+15:05:21 INFO  : XSCT server has started successfully.
+15:05:21 INFO  : Successfully done setting XSCT server connection channel  
+15:05:21 INFO  : plnx-install-location is set to ''
+15:05:21 INFO  : Successfully done setting workspace for the tool. 
+15:05:25 INFO  : Platform repository initialization has completed.
+15:05:26 INFO  : Successfully done query RDI_DATADIR 
+15:05:26 INFO  : Registering command handlers for Vitis TCF services
+15:06:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:06:46 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:06:46 INFO  : 'jtag frequency' command is executed.
+15:06:46 INFO  : Context for 'APU' is selected.
+15:06:46 INFO  : System reset is completed.
+15:06:49 INFO  : 'after 3000' command is executed.
+15:06:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:06:51 INFO  : Device configured successfully with "/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit"
+15:06:51 INFO  : Context for 'APU' is selected.
+15:06:52 INFO  : Hardware design and registers information is loaded from '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa'.
+15:06:52 INFO  : 'configparams force-mem-access 1' command is executed.
+15:06:52 INFO  : Context for 'APU' is selected.
+15:06:52 INFO  : Sourcing of '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl' is done.
+15:06:52 INFO  : 'ps7_init' command is executed.
+15:06:52 INFO  : 'ps7_post_config' command is executed.
+15:06:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:06:52 INFO  : The application '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:06:52 INFO  : 'configparams force-mem-access 0' command is executed.
+15:06:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:06:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:06:53 INFO  : 'con' command is executed.
+15:06:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:06:53 INFO  : Launch script is exported to file '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application_system/_ide/scripts/systemdebugger_neural_network_application_system_standalone.tcl'
+15:07:53 INFO  : Disconnected from the channel tcfchan#1.
+15:07:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:07:53 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:07:53 INFO  : 'jtag frequency' command is executed.
+15:07:53 INFO  : Context for 'APU' is selected.
+15:07:53 INFO  : System reset is completed.
+15:07:56 INFO  : 'after 3000' command is executed.
+15:07:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:07:59 INFO  : Device configured successfully with "/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit"
+15:07:59 INFO  : Context for 'APU' is selected.
+15:08:02 INFO  : Hardware design and registers information is loaded from '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa'.
+15:08:02 INFO  : 'configparams force-mem-access 1' command is executed.
+15:08:02 INFO  : Context for 'APU' is selected.
+15:08:02 INFO  : Sourcing of '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl' is done.
+15:08:03 INFO  : 'ps7_init' command is executed.
+15:08:03 INFO  : 'ps7_post_config' command is executed.
+15:08:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:08:03 INFO  : The application '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:08:03 INFO  : 'configparams force-mem-access 0' command is executed.
+15:08:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:08:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:08:03 INFO  : 'con' command is executed.
+15:08:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:08:03 INFO  : Launch script is exported to file '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application_system/_ide/scripts/systemdebugger_neural_network_application_system_standalone.tcl'
+15:15:14 INFO  : Checking for BSP changes to sync application flags for project 'neural_network_application'...
+15:15:27 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa is already opened
+
+15:16:00 INFO  : Checking for BSP changes to sync application flags for project 'neural_network_application'...
+15:16:52 INFO  : Checking for BSP changes to sync application flags for project 'neural_network_application'...
+15:18:12 INFO  : Result from executing command 'getProjects': neural_network_platform
+15:18:12 INFO  : Result from executing command 'getPlatforms': neural_network_platform|/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/neural_network_platform.xpfm
+15:18:15 INFO  : Checking for BSP changes to sync application flags for project 'neural_network_application'...
+15:18:43 ERROR : XSCT server calls should not be made from TCF thread.
+java.lang.RuntimeException: XSCT server calls should not be made from TCF thread.
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueAndWait(XSDBCommandManager.java:391)
+	at com.xilinx.sdk.xsdb.XsdbCommandUtils.executeAndRespond(XsdbCommandUtils.java:325)
+	at com.xilinx.sdk.hw.internal.HwPlatform.populateDesignProps(HwPlatform.java:522)
+	at com.xilinx.sdk.hw.internal.HwPlatform.isZynq(HwPlatform.java:1102)
+	at com.xilinx.sdk.hw.internal.HwPlatform.getArchFamily(HwPlatform.java:588)
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.readCrossTriggerModel(BaseLaunchConfigModel.java:174)
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.readAndSetAttributes(BaseLaunchConfigModel.java:156)
+	at com.xilinx.sdx.sdsoc.debug.ui.SdsLaunchConfigModel.newInstance(SdsLaunchConfigModel.java:104)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.createConfigModel(SdsTcfLaunchDelegate.java:85)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.generateReports(SdsTcfLaunchDelegate.java:634)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.onDisconnected(SdsTcfLaunchDelegate.java:608)
+	at org.eclipse.tcf.internal.debug.ui.model.TCFModelManager$1.onDisconnected(TCFModelManager.java:79)
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch.onDisconnected(TCFLaunch.java:532)
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch$43.onChannelClosed(TCFLaunch.java:1643)
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:858)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+15:18:43 INFO  : Disconnected from the channel tcfchan#2.
+15:18:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:18:43 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:18:43 INFO  : 'jtag frequency' command is executed.
+15:18:43 INFO  : Context for 'APU' is selected.
+15:18:43 INFO  : System reset is completed.
+15:18:46 INFO  : 'after 3000' command is executed.
+15:18:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:18:49 INFO  : Device configured successfully with "/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit"
+15:18:49 INFO  : Context for 'APU' is selected.
+15:18:49 INFO  : Hardware design and registers information is loaded from '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa'.
+15:18:49 INFO  : 'configparams force-mem-access 1' command is executed.
+15:18:49 INFO  : Context for 'APU' is selected.
+15:18:49 INFO  : Sourcing of '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl' is done.
+15:18:49 INFO  : 'ps7_init' command is executed.
+15:18:49 INFO  : 'ps7_post_config' command is executed.
+15:18:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:18:51 INFO  : The application '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:18:51 INFO  : 'configparams force-mem-access 0' command is executed.
+15:18:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:18:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:18:51 INFO  : 'con' command is executed.
+15:18:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:18:51 INFO  : Launch script is exported to file '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application_system/_ide/scripts/systemdebugger_neural_network_application_system_standalone.tcl'
+18:11:59 INFO  : Disconnected from the channel tcfchan#7.
+10:17:48 INFO  : Launching XSCT server: xsct -n  -interactive /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/temp_xsdb_launch_script.tcl
+10:17:55 INFO  : XSCT server has started successfully.
+10:17:55 INFO  : Successfully done setting XSCT server connection channel  
+10:17:55 INFO  : plnx-install-location is set to ''
+10:17:55 INFO  : Successfully done setting workspace for the tool. 
+10:18:13 INFO  : Platform repository initialization has completed.
+10:18:14 INFO  : Registering command handlers for Vitis TCF services
+10:18:15 INFO  : Successfully done query RDI_DATADIR 
+10:19:23 INFO  : Hardware specification for platform project 'neural_network_platform' is updated.
+10:21:14 INFO  : Result from executing command 'getProjects': neural_network_platform
+10:21:14 INFO  : Result from executing command 'getPlatforms': neural_network_platform|/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/neural_network_platform.xpfm
+10:23:37 INFO  : Result from executing command 'getProjects': neural_network_platform
+10:23:37 INFO  : Result from executing command 'getPlatforms': neural_network_platform|/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/neural_network_platform.xpfm
+10:23:40 INFO  : Checking for BSP changes to sync application flags for project 'neural_network_application'...
+10:23:43 INFO  : Updating application flags with new BSP settings...
+10:23:44 INFO  : Successfully updated application flags for project neural_network_application.
+10:23:48 INFO  : The hardware specfication used by project 'neural_network_application' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+10:23:48 INFO  : The file '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit' stored in project is removed.
+10:23:48 INFO  : The file '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.mmi' stored in project is removed.
+10:23:48 INFO  : The updated bitstream files are copied from platform to folder '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream' in project 'neural_network_application'.
+10:23:48 INFO  : The file '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl' stored in project is removed.
+10:23:55 INFO  : The updated ps init files are copied from platform to folder '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit' in project 'neural_network_application'.
+10:26:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:26:10 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+10:26:10 INFO  : 'jtag frequency' command is executed.
+10:26:10 INFO  : Context for 'APU' is selected.
+10:26:10 INFO  : System reset is completed.
+10:26:13 INFO  : 'after 3000' command is executed.
+10:26:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+10:26:16 INFO  : Device configured successfully with "/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit"
+10:26:16 INFO  : Context for 'APU' is selected.
+10:26:16 INFO  : Hardware design and registers information is loaded from '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa'.
+10:26:16 INFO  : 'configparams force-mem-access 1' command is executed.
+10:26:16 INFO  : Context for 'APU' is selected.
+10:26:16 INFO  : Sourcing of '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl' is done.
+10:26:17 INFO  : 'ps7_init' command is executed.
+10:26:17 INFO  : 'ps7_post_config' command is executed.
+10:26:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:26:19 INFO  : The application '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:26:19 INFO  : 'configparams force-mem-access 0' command is executed.
+10:26:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:26:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:26:19 INFO  : 'con' command is executed.
+10:26:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:26:19 INFO  : Launch script is exported to file '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application_system/_ide/scripts/systemdebugger_neural_network_application_system_standalone.tcl'
+10:29:15 INFO  : Disconnected from the channel tcfchan#6.
+10:29:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:29:15 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+10:29:15 INFO  : 'jtag frequency' command is executed.
+10:29:15 INFO  : Context for 'APU' is selected.
+10:29:15 INFO  : System reset is completed.
+10:29:18 INFO  : 'after 3000' command is executed.
+10:29:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+10:29:21 INFO  : Device configured successfully with "/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit"
+10:29:21 INFO  : Context for 'APU' is selected.
+10:29:21 INFO  : Hardware design and registers information is loaded from '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa'.
+10:29:21 INFO  : 'configparams force-mem-access 1' command is executed.
+10:29:21 INFO  : Context for 'APU' is selected.
+10:29:21 INFO  : Sourcing of '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl' is done.
+10:29:21 INFO  : 'ps7_init' command is executed.
+10:29:21 INFO  : 'ps7_post_config' command is executed.
+10:29:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:29:23 INFO  : The application '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:29:23 INFO  : 'configparams force-mem-access 0' command is executed.
+10:29:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:29:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:29:23 INFO  : 'con' command is executed.
+10:29:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:29:23 INFO  : Launch script is exported to file '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application_system/_ide/scripts/systemdebugger_neural_network_application_system_standalone.tcl'
+10:29:53 INFO  : Checking for BSP changes to sync application flags for project 'neural_network_application'...
+10:53:01 INFO  : Disconnected from the channel tcfchan#7.
+10:57:46 INFO  : Launching XSCT server: xsct -n  -interactive /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/temp_xsdb_launch_script.tcl
+10:57:51 INFO  : XSCT server has started successfully.
+10:57:51 INFO  : plnx-install-location is set to ''
+10:57:51 INFO  : Successfully done setting XSCT server connection channel  
+10:57:51 INFO  : Successfully done setting workspace for the tool. 
+10:57:55 INFO  : Platform repository initialization has completed.
+10:57:55 INFO  : Successfully done query RDI_DATADIR 
+10:57:55 INFO  : Registering command handlers for Vitis TCF services
+11:05:59 INFO  : Checking for BSP changes to sync application flags for project 'neural_network_application'...
+11:06:15 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa is already opened
+
+11:14:46 INFO  : Checking for BSP changes to sync application flags for project 'neural_network_application'...
+11:14:54 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa is already opened
+
+11:15:42 INFO  : Result from executing command 'getProjects': neural_network_platform
+11:15:42 INFO  : Result from executing command 'getPlatforms': neural_network_platform|/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/neural_network_platform.xpfm
+11:15:45 INFO  : Checking for BSP changes to sync application flags for project 'neural_network_application'...
+11:16:21 INFO  : Checking for BSP changes to sync application flags for project 'neural_network_application'...
+11:16:47 INFO  : Checking for BSP changes to sync application flags for project 'neural_network_application'...
+11:17:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:17:18 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+11:17:18 INFO  : 'jtag frequency' command is executed.
+11:17:18 INFO  : Context for 'APU' is selected.
+11:17:18 INFO  : System reset is completed.
+11:17:21 INFO  : 'after 3000' command is executed.
+11:17:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+11:17:23 INFO  : Device configured successfully with "/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit"
+11:17:23 INFO  : Context for 'APU' is selected.
+11:17:24 INFO  : Hardware design and registers information is loaded from '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa'.
+11:17:24 INFO  : 'configparams force-mem-access 1' command is executed.
+11:17:24 INFO  : Context for 'APU' is selected.
+11:17:24 INFO  : Sourcing of '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl' is done.
+11:17:24 INFO  : 'ps7_init' command is executed.
+11:17:24 INFO  : 'ps7_post_config' command is executed.
+11:17:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:17:26 INFO  : The application '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:17:26 INFO  : 'configparams force-mem-access 0' command is executed.
+11:17:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:17:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:17:26 INFO  : 'con' command is executed.
+11:17:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:17:26 INFO  : Launch script is exported to file '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application_system/_ide/scripts/systemdebugger_neural_network_application_system_standalone.tcl'
+11:17:54 INFO  : Disconnected from the channel tcfchan#8.
+11:17:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:17:54 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+11:17:54 INFO  : 'jtag frequency' command is executed.
+11:17:54 INFO  : Context for 'APU' is selected.
+11:17:55 INFO  : System reset is completed.
+11:17:58 INFO  : 'after 3000' command is executed.
+11:17:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+11:18:00 INFO  : Device configured successfully with "/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit"
+11:18:00 INFO  : Context for 'APU' is selected.
+11:18:00 INFO  : Hardware design and registers information is loaded from '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa'.
+11:18:00 INFO  : 'configparams force-mem-access 1' command is executed.
+11:18:00 INFO  : Context for 'APU' is selected.
+11:18:00 INFO  : Sourcing of '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl' is done.
+11:18:01 INFO  : 'ps7_init' command is executed.
+11:18:01 INFO  : 'ps7_post_config' command is executed.
+11:18:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:18:03 INFO  : The application '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:18:03 INFO  : 'configparams force-mem-access 0' command is executed.
+11:18:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:18:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:18:03 INFO  : 'con' command is executed.
+11:18:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:18:03 INFO  : Launch script is exported to file '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application_system/_ide/scripts/systemdebugger_neural_network_application_system_standalone.tcl'
+11:22:24 INFO  : Checking for BSP changes to sync application flags for project 'neural_network_application'...
+11:22:51 INFO  : Disconnected from the channel tcfchan#9.
+11:22:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:22:51 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+11:22:51 INFO  : 'jtag frequency' command is executed.
+11:22:51 INFO  : Context for 'APU' is selected.
+11:22:51 INFO  : System reset is completed.
+11:22:54 INFO  : 'after 3000' command is executed.
+11:22:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+11:22:57 INFO  : Device configured successfully with "/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit"
+11:22:57 INFO  : Context for 'APU' is selected.
+11:22:57 INFO  : Hardware design and registers information is loaded from '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa'.
+11:22:57 INFO  : 'configparams force-mem-access 1' command is executed.
+11:22:57 INFO  : Context for 'APU' is selected.
+11:22:57 INFO  : Sourcing of '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl' is done.
+11:22:58 INFO  : 'ps7_init' command is executed.
+11:22:58 INFO  : 'ps7_post_config' command is executed.
+11:22:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:23:00 INFO  : The application '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:23:00 INFO  : 'configparams force-mem-access 0' command is executed.
+11:23:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:23:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:23:00 INFO  : 'con' command is executed.
+11:23:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:23:00 INFO  : Launch script is exported to file '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application_system/_ide/scripts/systemdebugger_neural_network_application_system_standalone.tcl'
+11:29:17 INFO  : Checking for BSP changes to sync application flags for project 'neural_network_application'...
+11:30:42 INFO  : Checking for BSP changes to sync application flags for project 'neural_network_application'...
+11:31:14 INFO  : Disconnected from the channel tcfchan#11.
+11:31:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:31:15 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+11:31:15 INFO  : 'jtag frequency' command is executed.
+11:31:15 INFO  : Context for 'APU' is selected.
+11:31:15 INFO  : System reset is completed.
+11:31:18 INFO  : 'after 3000' command is executed.
+11:31:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+11:31:20 INFO  : Device configured successfully with "/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit"
+11:31:20 INFO  : Context for 'APU' is selected.
+11:31:20 INFO  : Hardware design and registers information is loaded from '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa'.
+11:31:20 INFO  : 'configparams force-mem-access 1' command is executed.
+11:31:20 INFO  : Context for 'APU' is selected.
+11:31:20 INFO  : Sourcing of '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl' is done.
+11:31:21 INFO  : 'ps7_init' command is executed.
+11:31:21 INFO  : 'ps7_post_config' command is executed.
+11:31:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:31:23 INFO  : The application '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:31:23 INFO  : 'configparams force-mem-access 0' command is executed.
+11:31:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:31:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:31:23 INFO  : 'con' command is executed.
+11:31:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:31:23 INFO  : Launch script is exported to file '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application_system/_ide/scripts/systemdebugger_neural_network_application_system_standalone.tcl'
+11:34:48 INFO  : Checking for BSP changes to sync application flags for project 'neural_network_application'...
+11:35:15 INFO  : Disconnected from the channel tcfchan#14.
+11:35:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:35:15 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+11:35:15 INFO  : 'jtag frequency' command is executed.
+11:35:15 INFO  : Context for 'APU' is selected.
+11:35:15 INFO  : System reset is completed.
+11:35:18 INFO  : 'after 3000' command is executed.
+11:35:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+11:35:21 INFO  : Device configured successfully with "/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit"
+11:35:21 INFO  : Context for 'APU' is selected.
+11:35:21 INFO  : Hardware design and registers information is loaded from '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa'.
+11:35:21 INFO  : 'configparams force-mem-access 1' command is executed.
+11:35:21 INFO  : Context for 'APU' is selected.
+11:35:21 INFO  : Sourcing of '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl' is done.
+11:35:21 INFO  : 'ps7_init' command is executed.
+11:35:21 INFO  : 'ps7_post_config' command is executed.
+11:35:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:35:23 INFO  : The application '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:35:23 INFO  : 'configparams force-mem-access 0' command is executed.
+11:35:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:35:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:35:23 INFO  : 'con' command is executed.
+11:35:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:35:23 INFO  : Launch script is exported to file '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application_system/_ide/scripts/systemdebugger_neural_network_application_system_standalone.tcl'
+11:38:19 INFO  : Checking for BSP changes to sync application flags for project 'neural_network_application'...
+11:41:02 INFO  : Disconnected from the channel tcfchan#16.
+11:41:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:41:02 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+11:41:02 INFO  : 'jtag frequency' command is executed.
+11:41:02 INFO  : Context for 'APU' is selected.
+11:41:02 INFO  : System reset is completed.
+11:41:05 INFO  : 'after 3000' command is executed.
+11:41:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+11:41:08 INFO  : Device configured successfully with "/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit"
+11:41:08 INFO  : Context for 'APU' is selected.
+11:41:08 INFO  : Hardware design and registers information is loaded from '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa'.
+11:41:08 INFO  : 'configparams force-mem-access 1' command is executed.
+11:41:08 INFO  : Context for 'APU' is selected.
+11:41:08 INFO  : Sourcing of '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl' is done.
+11:41:08 INFO  : 'ps7_init' command is executed.
+11:41:08 INFO  : 'ps7_post_config' command is executed.
+11:41:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:41:11 INFO  : The application '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:41:11 INFO  : 'configparams force-mem-access 0' command is executed.
+11:41:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:41:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:41:11 INFO  : 'con' command is executed.
+11:41:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:41:11 INFO  : Launch script is exported to file '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application_system/_ide/scripts/systemdebugger_neural_network_application_system_standalone.tcl'
+11:41:34 INFO  : Checking for BSP changes to sync application flags for project 'neural_network_application'...
+11:41:57 INFO  : Disconnected from the channel tcfchan#18.
+11:41:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:41:57 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+11:41:57 INFO  : 'jtag frequency' command is executed.
+11:41:57 INFO  : Context for 'APU' is selected.
+11:41:57 INFO  : System reset is completed.
+11:42:00 INFO  : 'after 3000' command is executed.
+11:42:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+11:42:03 INFO  : Device configured successfully with "/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit"
+11:42:03 INFO  : Context for 'APU' is selected.
+11:42:03 INFO  : Hardware design and registers information is loaded from '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa'.
+11:42:03 INFO  : 'configparams force-mem-access 1' command is executed.
+11:42:03 INFO  : Context for 'APU' is selected.
+11:42:03 INFO  : Sourcing of '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl' is done.
+11:42:03 INFO  : 'ps7_init' command is executed.
+11:42:03 INFO  : 'ps7_post_config' command is executed.
+11:42:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:42:05 INFO  : The application '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:42:05 INFO  : 'configparams force-mem-access 0' command is executed.
+11:42:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:42:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:42:05 INFO  : 'con' command is executed.
+11:42:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:42:05 INFO  : Launch script is exported to file '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application_system/_ide/scripts/systemdebugger_neural_network_application_system_standalone.tcl'
+11:48:04 INFO  : Result from executing command 'getProjects': neural_network_platform
+11:48:04 INFO  : Result from executing command 'getPlatforms': neural_network_platform|/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/neural_network_platform.xpfm
+11:48:07 INFO  : Checking for BSP changes to sync application flags for project 'neural_network_application'...
+11:48:45 INFO  : Checking for BSP changes to sync application flags for project 'neural_network_application'...
+11:49:24 INFO  : Checking for BSP changes to sync application flags for project 'neural_network_application'...
+11:50:17 ERROR : XSCT server calls should not be made from TCF thread.
+java.lang.RuntimeException: XSCT server calls should not be made from TCF thread.
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueAndWait(XSDBCommandManager.java:391)
+	at com.xilinx.sdk.xsdb.XsdbCommandUtils.executeAndRespond(XsdbCommandUtils.java:325)
+	at com.xilinx.sdk.hw.internal.HwPlatform.populateDesignProps(HwPlatform.java:522)
+	at com.xilinx.sdk.hw.internal.HwPlatform.isZynq(HwPlatform.java:1102)
+	at com.xilinx.sdk.hw.internal.HwPlatform.getArchFamily(HwPlatform.java:588)
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.readCrossTriggerModel(BaseLaunchConfigModel.java:174)
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.readAndSetAttributes(BaseLaunchConfigModel.java:156)
+	at com.xilinx.sdx.sdsoc.debug.ui.SdsLaunchConfigModel.newInstance(SdsLaunchConfigModel.java:104)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.createConfigModel(SdsTcfLaunchDelegate.java:85)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.generateReports(SdsTcfLaunchDelegate.java:634)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.onDisconnected(SdsTcfLaunchDelegate.java:608)
+	at org.eclipse.tcf.internal.debug.ui.model.TCFModelManager$1.onDisconnected(TCFModelManager.java:79)
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch.onDisconnected(TCFLaunch.java:532)
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch$43.onChannelClosed(TCFLaunch.java:1643)
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:858)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+11:50:17 INFO  : Disconnected from the channel tcfchan#20.
+11:50:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:50:17 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+11:50:17 INFO  : 'jtag frequency' command is executed.
+11:50:18 INFO  : Context for 'APU' is selected.
+11:50:18 INFO  : System reset is completed.
+11:50:21 INFO  : 'after 3000' command is executed.
+11:50:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+11:50:23 INFO  : Device configured successfully with "/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit"
+11:50:23 INFO  : Context for 'APU' is selected.
+11:50:23 INFO  : Hardware design and registers information is loaded from '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa'.
+11:50:23 INFO  : 'configparams force-mem-access 1' command is executed.
+11:50:23 INFO  : Context for 'APU' is selected.
+11:50:23 INFO  : Sourcing of '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl' is done.
+11:50:24 INFO  : 'ps7_init' command is executed.
+11:50:24 INFO  : 'ps7_post_config' command is executed.
+11:50:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:50:26 INFO  : The application '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:50:26 INFO  : 'configparams force-mem-access 0' command is executed.
+11:50:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:50:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:50:26 INFO  : 'con' command is executed.
+11:50:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:50:26 INFO  : Launch script is exported to file '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application_system/_ide/scripts/systemdebugger_neural_network_application_system_standalone.tcl'
+11:54:36 INFO  : Disconnected from the channel tcfchan#25.
+18:23:55 INFO  : Launching XSCT server: xsct -n  -interactive /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/temp_xsdb_launch_script.tcl
+18:24:00 INFO  : XSCT server has started successfully.
+18:24:00 INFO  : plnx-install-location is set to ''
+18:24:00 INFO  : Successfully done setting XSCT server connection channel  
+18:24:00 INFO  : Successfully done setting workspace for the tool. 
+18:24:04 INFO  : Platform repository initialization has completed.
+18:24:04 INFO  : Registering command handlers for Vitis TCF services
+18:24:05 INFO  : Successfully done query RDI_DATADIR 
+18:24:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:24:50 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+18:24:50 INFO  : 'jtag frequency' command is executed.
+18:24:50 INFO  : Context for 'APU' is selected.
+18:24:50 INFO  : System reset is completed.
+18:24:53 INFO  : 'after 3000' command is executed.
+18:24:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+18:24:55 INFO  : Device configured successfully with "/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit"
+18:24:55 INFO  : Context for 'APU' is selected.
+18:24:55 INFO  : Hardware design and registers information is loaded from '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa'.
+18:24:55 INFO  : 'configparams force-mem-access 1' command is executed.
+18:24:55 INFO  : Context for 'APU' is selected.
+18:24:55 INFO  : Sourcing of '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl' is done.
+18:24:56 INFO  : 'ps7_init' command is executed.
+18:24:56 INFO  : 'ps7_post_config' command is executed.
+18:24:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:24:58 INFO  : The application '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:24:58 INFO  : 'configparams force-mem-access 0' command is executed.
+18:24:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application/Debug/neural_network_application.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:24:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:24:58 INFO  : 'con' command is executed.
+18:24:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:24:58 INFO  : Launch script is exported to file '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/neural_network_application_system/_ide/scripts/systemdebugger_neural_network_application_system_standalone.tcl'
+21:41:06 INFO  : Disconnected from the channel tcfchan#1.
+17:45:07 INFO  : Launching XSCT server: xsct -n  -interactive /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_vitis/temp_xsdb_launch_script.tcl
+17:45:11 INFO  : XSCT server has started successfully.
+17:45:11 INFO  : plnx-install-location is set to ''
+17:45:11 INFO  : Successfully done setting XSCT server connection channel  
+17:45:11 INFO  : Successfully done setting workspace for the tool. 
+17:45:16 INFO  : Platform repository initialization has completed.
+17:45:16 INFO  : Successfully done query RDI_DATADIR 
+17:45:16 INFO  : Registering command handlers for Vitis TCF services

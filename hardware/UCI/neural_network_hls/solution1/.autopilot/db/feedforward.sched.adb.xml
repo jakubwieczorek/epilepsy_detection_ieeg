@@ -22417,7 +22417,7 @@ split:4 %br_ln31 = br i1 %icmp_ln31, void %.split6, void %.preheader.preheader
 
 <Node id="764" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:0 %x_assign_1 = fadd i32 %empty_20, i32 -0.534799
+:0 %x_assign_1 = fadd i32 %empty_20, i32 -0.592766
 
 ]]></Node>
 <StgValue><ssdm name="x_assign_1"/></StgValue>
@@ -22435,7 +22435,7 @@ split:4 %br_ln31 = br i1 %icmp_ln31, void %.split6, void %.preheader.preheader
 
 <Node id="764" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:0 %x_assign_1 = fadd i32 %empty_20, i32 -0.534799
+:0 %x_assign_1 = fadd i32 %empty_20, i32 -0.592766
 
 ]]></Node>
 <StgValue><ssdm name="x_assign_1"/></StgValue>
@@ -22453,7 +22453,7 @@ split:4 %br_ln31 = br i1 %icmp_ln31, void %.split6, void %.preheader.preheader
 
 <Node id="764" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:0 %x_assign_1 = fadd i32 %empty_20, i32 -0.534799
+:0 %x_assign_1 = fadd i32 %empty_20, i32 -0.592766
 
 ]]></Node>
 <StgValue><ssdm name="x_assign_1"/></StgValue>
@@ -22471,7 +22471,7 @@ split:4 %br_ln31 = br i1 %icmp_ln31, void %.split6, void %.preheader.preheader
 
 <Node id="764" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:0 %x_assign_1 = fadd i32 %empty_20, i32 -0.534799
+:0 %x_assign_1 = fadd i32 %empty_20, i32 -0.592766
 
 ]]></Node>
 <StgValue><ssdm name="x_assign_1"/></StgValue>
@@ -22489,7 +22489,7 @@ split:4 %br_ln31 = br i1 %icmp_ln31, void %.split6, void %.preheader.preheader
 
 <Node id="764" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:0 %x_assign_1 = fadd i32 %empty_20, i32 -0.534799
+:0 %x_assign_1 = fadd i32 %empty_20, i32 -0.592766
 
 ]]></Node>
 <StgValue><ssdm name="x_assign_1"/></StgValue>

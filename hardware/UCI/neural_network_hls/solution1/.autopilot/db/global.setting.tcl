@@ -45,12 +45,12 @@ set TargetInfo xc7z020:-clg400:-1
 set SourceFiles {sc {} c ../feedforward.cpp}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_hls/solution1/solution1.directive
-set TBFiles {verilog {../main.cpp ../expected_result.txt} bc {../main.cpp ../expected_result.txt} sc {../main.cpp ../expected_result.txt} vhdl {../main.cpp ../expected_result.txt} c {} cas {../main.cpp ../expected_result.txt}}
+set TBFiles {verilog {../main.cpp ../expected_result2.txt ../expected_result.txt} bc {../main.cpp ../expected_result2.txt ../expected_result.txt} vhdl {../main.cpp ../expected_result2.txt ../expected_result.txt} sc {../main.cpp ../expected_result2.txt ../expected_result.txt} cas {../main.cpp ../expected_result2.txt ../expected_result.txt} c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
-set TBTops {verilog {} bc {} sc {} vhdl {} c {} cas {}}
-set TBInstNames {verilog {} bc {} sc {} vhdl {} c {} cas {}}
+set TBTops {verilog {} bc {} vhdl {} sc {} cas {} c {}}
+set TBInstNames {verilog {} bc {} vhdl {} sc {} cas {} c {}}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
 set TBTVFileNotFound {}

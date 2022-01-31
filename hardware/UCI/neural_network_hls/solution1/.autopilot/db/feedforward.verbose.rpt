@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'feedforward'
 ================================================================
-* Date:           Wed Jan 19 14:47:47 2022
+* Date:           Fri Jan 28 22:03:47 2022
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
 * Project:        neural_network_hls
@@ -2229,19 +2229,19 @@ ST_112 : Operation 1554 [1/5] (7.25ns)   --->   "%add3 = fadd i32 %empty_20, i32
 ST_112 : Operation 1555 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 1555 'br' 'br_ln0' <Predicate = (!icmp_ln44)> <Delay = 0.00>
 
 State 113 <SV = 16> <Delay = 9.80>
-ST_113 : Operation 1556 [5/5] (9.80ns)   --->   "%x_assign_1 = fadd i32 %empty_20, i32 -0.534799" [neural_network_hls/feedforward.cpp:49]   --->   Operation 1556 'fadd' 'x_assign_1' <Predicate = true> <Delay = 9.80> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_113 : Operation 1556 [5/5] (9.80ns)   --->   "%x_assign_1 = fadd i32 %empty_20, i32 -0.592766" [neural_network_hls/feedforward.cpp:49]   --->   Operation 1556 'fadd' 'x_assign_1' <Predicate = true> <Delay = 9.80> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 114 <SV = 17> <Delay = 7.25>
-ST_114 : Operation 1557 [4/5] (7.25ns)   --->   "%x_assign_1 = fadd i32 %empty_20, i32 -0.534799" [neural_network_hls/feedforward.cpp:49]   --->   Operation 1557 'fadd' 'x_assign_1' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_114 : Operation 1557 [4/5] (7.25ns)   --->   "%x_assign_1 = fadd i32 %empty_20, i32 -0.592766" [neural_network_hls/feedforward.cpp:49]   --->   Operation 1557 'fadd' 'x_assign_1' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 115 <SV = 18> <Delay = 7.25>
-ST_115 : Operation 1558 [3/5] (7.25ns)   --->   "%x_assign_1 = fadd i32 %empty_20, i32 -0.534799" [neural_network_hls/feedforward.cpp:49]   --->   Operation 1558 'fadd' 'x_assign_1' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_115 : Operation 1558 [3/5] (7.25ns)   --->   "%x_assign_1 = fadd i32 %empty_20, i32 -0.592766" [neural_network_hls/feedforward.cpp:49]   --->   Operation 1558 'fadd' 'x_assign_1' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 116 <SV = 19> <Delay = 7.25>
-ST_116 : Operation 1559 [2/5] (7.25ns)   --->   "%x_assign_1 = fadd i32 %empty_20, i32 -0.534799" [neural_network_hls/feedforward.cpp:49]   --->   Operation 1559 'fadd' 'x_assign_1' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_116 : Operation 1559 [2/5] (7.25ns)   --->   "%x_assign_1 = fadd i32 %empty_20, i32 -0.592766" [neural_network_hls/feedforward.cpp:49]   --->   Operation 1559 'fadd' 'x_assign_1' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 117 <SV = 20> <Delay = 7.25>
-ST_117 : Operation 1560 [1/5] (7.25ns)   --->   "%x_assign_1 = fadd i32 %empty_20, i32 -0.534799" [neural_network_hls/feedforward.cpp:49]   --->   Operation 1560 'fadd' 'x_assign_1' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_117 : Operation 1560 [1/5] (7.25ns)   --->   "%x_assign_1 = fadd i32 %empty_20, i32 -0.592766" [neural_network_hls/feedforward.cpp:49]   --->   Operation 1560 'fadd' 'x_assign_1' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 118 <SV = 21> <Delay = 0.99>
 ST_118 : Operation 1561 [1/1] (0.00ns)   --->   "%bitcast_ln13 = bitcast i32 %x_assign_1" [neural_network_hls/feedforward.cpp:13]   --->   Operation 1561 'bitcast' 'bitcast_ln13' <Predicate = true> <Delay = 0.00>

@@ -393,7 +393,7 @@ architecture behav of feedforward is
     constant ap_const_lv4_0 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
     constant ap_const_lv4_F : STD_LOGIC_VECTOR (3 downto 0) := "1111";
     constant ap_const_lv32_93 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000010010011";
-    constant ap_const_lv32_BF08E896 : STD_LOGIC_VECTOR (31 downto 0) := "10111111000010001110100010010110";
+    constant ap_const_lv32_BF17BF83 : STD_LOGIC_VECTOR (31 downto 0) := "10111111000101111011111110000011";
     constant ap_const_lv32_3F800000 : STD_LOGIC_VECTOR (31 downto 0) := "00111111100000000000000000000000";
     constant ap_const_lv32_5B : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000001011011";
     constant ap_const_lv32_6B : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000001101011";
@@ -3053,7 +3053,7 @@ begin
         if ((ap_const_logic_1 = ap_CS_fsm_state128)) then 
             grp_fu_1641_p1 <= ap_const_lv32_3F800000;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state113)) then 
-            grp_fu_1641_p1 <= ap_const_lv32_BF08E896;
+            grp_fu_1641_p1 <= ap_const_lv32_BF17BF83;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state92)) then 
             grp_fu_1641_p1 <= b1_load_reg_3874;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state81) or (ap_const_logic_1 = ap_CS_fsm_state66) or (ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state26) or (ap_const_logic_1 = ap_CS_fsm_state61) or (ap_const_logic_1 = ap_CS_fsm_state41) or (ap_const_logic_1 = ap_CS_fsm_state21) or (ap_const_logic_1 = ap_CS_fsm_state76) or (ap_const_logic_1 = ap_CS_fsm_state56) or (ap_const_logic_1 = ap_CS_fsm_state36) or (ap_const_logic_1 = ap_CS_fsm_state16) or (ap_const_logic_1 = ap_CS_fsm_state71) or (ap_const_logic_1 = ap_CS_fsm_state51) or (ap_const_logic_1 = ap_CS_fsm_state31))) then 

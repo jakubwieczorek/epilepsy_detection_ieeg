@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'feedforward'" level="0">
-<item name = "Date">Wed Jan 19 14:47:42 2022
+<item name = "Date">Fri Jan 28 22:03:43 2022
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
 <item name = "Project">neural_network_hls</item>

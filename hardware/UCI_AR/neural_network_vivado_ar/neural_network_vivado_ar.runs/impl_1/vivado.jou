@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jan 31 16:40:28 2022
+# Process ID: 24235
+# Current directory: /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI_AR/neural_network_vivado_ar/neural_network_vivado_ar.runs/impl_1
+# Command line: vivado -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI_AR/neural_network_vivado_ar/neural_network_vivado_ar.runs/impl_1/design_1_wrapper.vdi
+# Journal file: /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI_AR/neural_network_vivado_ar/neural_network_vivado_ar.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

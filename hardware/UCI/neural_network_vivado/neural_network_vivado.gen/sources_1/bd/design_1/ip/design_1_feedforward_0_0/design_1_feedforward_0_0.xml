@@ -1061,11 +1061,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jan 19 22:03:26 UTC 2022</spirit:value>
+            <spirit:value>Sat Jan 29 08:52:51 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:25d68b5e</spirit:value>
+            <spirit:value>9:c8ad20eb</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1076,7 +1076,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:25d68b5e</spirit:value>
+            <spirit:value>9:c8ad20eb</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1092,11 +1092,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jan 19 22:03:26 UTC 2022</spirit:value>
+            <spirit:value>Sat Jan 29 08:52:51 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:25d68b5e</spirit:value>
+            <spirit:value>9:c8ad20eb</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1139,11 +1139,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jan 19 22:03:25 UTC 2022</spirit:value>
+            <spirit:value>Sat Jan 29 08:52:51 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:cba1951f</spirit:value>
+            <spirit:value>9:26da3eaa</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1159,11 +1159,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jan 19 22:03:26 UTC 2022</spirit:value>
+            <spirit:value>Sat Jan 29 08:52:51 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:cba1951f</spirit:value>
+            <spirit:value>9:26da3eaa</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1827,23 +1827,23 @@
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/ip/feedforward_ap_fadd_3_full_dsp_32.v</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/ip/feedforward_ap_fadd_3_full_dsp_32.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/ip/feedforward_ap_fexp_7_full_dsp_32.v</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/ip/feedforward_ap_fexp_7_full_dsp_32.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/ip/feedforward_ap_fdiv_14_no_dsp_32.v</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/ip/feedforward_ap_fdiv_14_no_dsp_32.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/ip/feedforward_ap_fmul_2_max_dsp_32.v</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/ip/feedforward_ap_fmul_2_max_dsp_32.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/ip/feedforward_ap_fcmp_0_no_dsp_32.v</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/ip/feedforward_ap_fcmp_0_no_dsp_32.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1852,51 +1852,51 @@
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/vhdl/feedforward_b1.vhd</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/vhdl/feedforward_b1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/vhdl/feedforward_CTRL_BUS_s_axi.vhd</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/vhdl/feedforward_CTRL_BUS_s_axi.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/vhdl/feedforward_fadd_32ns_32ns_32_5_full_dsp_1.vhd</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/vhdl/feedforward_fadd_32ns_32ns_32_5_full_dsp_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/vhdl/feedforward_fcmp_32ns_32ns_1_2_no_dsp_1.vhd</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/vhdl/feedforward_fcmp_32ns_32ns_1_2_no_dsp_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/vhdl/feedforward_fdiv_32ns_32ns_32_16_no_dsp_1.vhd</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/vhdl/feedforward_fdiv_32ns_32ns_32_16_no_dsp_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/vhdl/feedforward_fexp_32ns_32ns_32_9_full_dsp_1.vhd</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/vhdl/feedforward_fexp_32ns_32ns_32_9_full_dsp_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/vhdl/feedforward_fmul_32ns_32ns_32_4_max_dsp_1.vhd</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/vhdl/feedforward_fmul_32ns_32ns_32_4_max_dsp_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/vhdl/feedforward_l1y.vhd</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/vhdl/feedforward_l1y.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/vhdl/feedforward_w1.vhd</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/vhdl/feedforward_w1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/vhdl/feedforward_w2_0.vhd</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/vhdl/feedforward_w2_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/vhdl/feedforward_wy_sum.vhd</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/vhdl/feedforward_wy_sum.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/vhdl/feedforward.vhd</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/vhdl/feedforward.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -2061,87 +2061,87 @@
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/vhdl/feedforward_b1.vhd</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/vhdl/feedforward_b1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/vhdl/feedforward_CTRL_BUS_s_axi.vhd</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/vhdl/feedforward_CTRL_BUS_s_axi.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/vhdl/feedforward_fadd_32ns_32ns_32_5_full_dsp_1.vhd</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/vhdl/feedforward_fadd_32ns_32ns_32_5_full_dsp_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/vhdl/feedforward_fcmp_32ns_32ns_1_2_no_dsp_1.vhd</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/vhdl/feedforward_fcmp_32ns_32ns_1_2_no_dsp_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/vhdl/feedforward_fdiv_32ns_32ns_32_16_no_dsp_1.vhd</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/vhdl/feedforward_fdiv_32ns_32ns_32_16_no_dsp_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/vhdl/feedforward_fexp_32ns_32ns_32_9_full_dsp_1.vhd</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/vhdl/feedforward_fexp_32ns_32ns_32_9_full_dsp_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/vhdl/feedforward_fmul_32ns_32ns_32_4_max_dsp_1.vhd</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/vhdl/feedforward_fmul_32ns_32ns_32_4_max_dsp_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/vhdl/feedforward_l1y.vhd</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/vhdl/feedforward_l1y.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/vhdl/feedforward_w1.vhd</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/vhdl/feedforward_w1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/vhdl/feedforward_w2_0.vhd</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/vhdl/feedforward_w2_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/vhdl/feedforward_wy_sum.vhd</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/vhdl/feedforward_wy_sum.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/vhdl/feedforward.vhd</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/vhdl/feedforward.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/ip/feedforward_ap_fadd_3_full_dsp_32.v</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/ip/feedforward_ap_fadd_3_full_dsp_32.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/ip/feedforward_ap_fexp_7_full_dsp_32.v</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/ip/feedforward_ap_fexp_7_full_dsp_32.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/ip/feedforward_ap_fdiv_14_no_dsp_32.v</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/ip/feedforward_ap_fdiv_14_no_dsp_32.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/ip/feedforward_ap_fmul_2_max_dsp_32.v</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/ip/feedforward_ap_fmul_2_max_dsp_32.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e912/hdl/ip/feedforward_ap_fcmp_0_no_dsp_32.v</spirit:name>
+        <spirit:name>../../ipshared/96f8/hdl/ip/feedforward_ap_fcmp_0_no_dsp_32.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2221,7 +2221,7 @@
     <xilinx:coreExtensions>
       <xilinx:displayName>Feedforward</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2101192139</xilinx:coreRevision>
+      <xilinx:coreRevision>2101282306</xilinx:coreRevision>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -2286,7 +2286,7 @@
       <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="941f8a9b"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ca49a910"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="c8e75172"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="5b79a39c"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="11d78ad7"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="bb5efbe5"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="a2696649"/>

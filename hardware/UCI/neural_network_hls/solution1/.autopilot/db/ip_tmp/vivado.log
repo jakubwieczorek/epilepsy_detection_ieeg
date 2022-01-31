@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Jan 19 15:11:41 2022
-# Process ID: 19074
+# Start of session at: Fri Jan 28 22:05:07 2022
+# Process ID: 7626
 # Current directory: /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_hls/solution1/.autopilot/db/ip_tmp
 # Command line: vivado  -notrace -log vivado.log -mode batch -source run_vivado_gen_ip.tcl
 # Log file: /home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_hls/solution1/.autopilot/db/ip_tmp/vivado.log
@@ -28,4 +28,4 @@ INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'feedforward_ap_fc
 WARNING: [IP_Flow 19-4832] The IP name 'feedforward_ap_fmul_2_max_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
 INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'feedforward_ap_fmul_2_max_dsp_32'...
 INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'feedforward_ap_fmul_2_max_dsp_32'...
-INFO: [Common 17-206] Exiting Vivado at Wed Jan 19 15:12:18 2022...
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 28 22:05:45 2022...

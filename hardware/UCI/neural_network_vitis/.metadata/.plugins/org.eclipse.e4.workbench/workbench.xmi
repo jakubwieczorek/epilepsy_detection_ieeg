@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_5o29kXnQEeyE2Y3jtFBuzA" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_5o3koHnQEeyE2Y3jtFBuzA" bindingContexts="_5o3kqXnQEeyE2Y3jtFBuzA">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;xfeedforward.h&quot; tooltip=&quot;neural_network_platform/export/neural_network_platform/hw/drivers/feedforward_v1_0/src/xfeedforward.h&quot;>&#xA;&lt;persistable path=&quot;/neural_network_platform/export/neural_network_platform/hw/drivers/feedforward_v1_0/src/xfeedforward.h&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;feedforward_firmware.c&quot; tooltip=&quot;neural_network_application/src/feedforward_firmware.c&quot;>&#xA;&lt;persistable path=&quot;/neural_network_application/src/feedforward_firmware.c&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;platform.c&quot; tooltip=&quot;neural_network_application/src/platform.c&quot;>&#xA;&lt;persistable path=&quot;/neural_network_application/src/platform.c&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;platform.h&quot; tooltip=&quot;neural_network_application/src/platform.h&quot;>&#xA;&lt;persistable path=&quot;/neural_network_application/src/platform.h&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;platform_config.h&quot; tooltip=&quot;neural_network_application/src/platform_config.h&quot;>&#xA;&lt;persistable path=&quot;/neural_network_application/src/platform_config.h&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;helloworld.c&quot; tooltip=&quot;neural_network_application/src/helloworld.c&quot;>&#xA;&lt;persistable path=&quot;/neural_network_application/src/helloworld.c&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.xilinx.sdx.ui.settingseditor&quot; name=&quot;neural_network_application.prj&quot; tooltip=&quot;neural_network_application/neural_network_application.prj&quot;>&#xA;&lt;persistable path=&quot;/neural_network_application/neural_network_application.prj&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.xilinx.sdx.scw.ui.editor.HwSpecEditor&quot; name=&quot;design_1_wrapper.xsa&quot; tooltip=&quot;neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa&quot;>&#xA;&lt;persistable path=&quot;/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.xilinx.sdx.scw.ui.editor.ScwEditor&quot; name=&quot;platform.spr&quot; tooltip=&quot;neural_network_platform/platform.spr&quot;>&#xA;&lt;persistable path=&quot;/neural_network_platform/platform.spr&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;xparameters.h&quot; tooltip=&quot;neural_network_platform/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/include/xparameters.h&quot;>&#xA;&lt;persistable path=&quot;/neural_network_platform/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/include/xparameters.h&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;xparameters.h&quot; tooltip=&quot;neural_network_platform/export/neural_network_platform/sw/neural_network_platform/standalone_domain/bspinclude/include/xparameters.h&quot;>&#xA;&lt;persistable path=&quot;/neural_network_platform/export/neural_network_platform/sw/neural_network_platform/standalone_domain/bspinclude/include/xparameters.h&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;xtmrctr.c&quot; tooltip=&quot;neural_network_platform/ps7_cortexa9_0/standalone_domain/bsp/ps7_cortexa9_0/libsrc/tmrctr_v4_7/src/xtmrctr.c&quot;>&#xA;&lt;persistable path=&quot;/neural_network_platform/ps7_cortexa9_0/standalone_domain/bsp/ps7_cortexa9_0/libsrc/tmrctr_v4_7/src/xtmrctr.c&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;feedforward_firmware.c&quot; tooltip=&quot;neural_network_application/src/feedforward_firmware.c&quot;>&#xA;&lt;persistable path=&quot;/neural_network_application/src/feedforward_firmware.c&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;AxiTimerHelper.cpp&quot; tooltip=&quot;neural_network_application/src/AxiTimerHelper.cpp&quot;>&#xA;&lt;persistable path=&quot;/neural_network_application/src/AxiTimerHelper.cpp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;AxiTimerHelper.h&quot; tooltip=&quot;neural_network_application/src/AxiTimerHelper.h&quot;>&#xA;&lt;persistable path=&quot;/neural_network_application/src/AxiTimerHelper.h&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;val_data.h&quot; tooltip=&quot;neural_network_application/src/val_data.h&quot;>&#xA;&lt;persistable path=&quot;/neural_network_application/src/val_data.h&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;val_labels.h&quot; tooltip=&quot;neural_network_application/src/val_labels.h&quot;>&#xA;&lt;persistable path=&quot;/neural_network_application/src/val_labels.h&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;sample.h&quot; tooltip=&quot;neural_network_application/src/sample.h&quot;>&#xA;&lt;persistable path=&quot;/neural_network_application/src/sample.h&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;xfeedforward.h&quot; tooltip=&quot;neural_network_platform/export/neural_network_platform/hw/drivers/feedforward_v1_0/src/xfeedforward.h&quot;>&#xA;&lt;persistable path=&quot;/neural_network_platform/export/neural_network_platform/hw/drivers/feedforward_v1_0/src/xfeedforward.h&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;platform.c&quot; tooltip=&quot;neural_network_application/src/platform.c&quot;>&#xA;&lt;persistable path=&quot;/neural_network_application/src/platform.c&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;platform.h&quot; tooltip=&quot;neural_network_application/src/platform.h&quot;>&#xA;&lt;persistable path=&quot;/neural_network_application/src/platform.h&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;platform_config.h&quot; tooltip=&quot;neural_network_application/src/platform_config.h&quot;>&#xA;&lt;persistable path=&quot;/neural_network_application/src/platform_config.h&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;helloworld.c&quot; tooltip=&quot;neural_network_application/src/helloworld.c&quot;>&#xA;&lt;persistable path=&quot;/neural_network_application/src/helloworld.c&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.xilinx.sdx.ui.settingseditor&quot; name=&quot;neural_network_application.prj&quot; tooltip=&quot;neural_network_application/neural_network_application.prj&quot;>&#xA;&lt;persistable path=&quot;/neural_network_application/neural_network_application.prj&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.xilinx.sdx.scw.ui.editor.HwSpecEditor&quot; name=&quot;design_1_wrapper.xsa&quot; tooltip=&quot;neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa&quot;>&#xA;&lt;persistable path=&quot;/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.xilinx.sdx.scw.ui.editor.ScwEditor&quot; name=&quot;platform.spr&quot; tooltip=&quot;neural_network_platform/platform.spr&quot;>&#xA;&lt;persistable path=&quot;/neural_network_platform/platform.spr&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_5o3koHnQEeyE2Y3jtFBuzA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_6VA48nnQEeyE2Y3jtFBuzA" x="1254" y="0" width="1157" height="650">
@@ -13,7 +13,7 @@
     <tags>topLevel</tags>
     <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_6VA48nnQEeyE2Y3jtFBuzA" selectedElement="_6VA483nQEeyE2Y3jtFBuzA" horizontal="true">
-      <children xsi:type="advanced:PerspectiveStack" xmi:id="_6VA483nQEeyE2Y3jtFBuzA" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_6VrnUHnQEeyE2Y3jtFBuzA">
+      <children xsi:type="advanced:PerspectiveStack" xmi:id="_6VA483nQEeyE2Y3jtFBuzA" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_6VL4EHnQEeyE2Y3jtFBuzA">
         <children xsi:type="advanced:Perspective" xmi:id="_6VL4EHnQEeyE2Y3jtFBuzA" elementId="com.xilinx.ide.application.ui.perspectve" selectedElement="_6VL4EXnQEeyE2Y3jtFBuzA" label="Design">
           <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:print,persp.hideToolbarSC:org.eclipse.ui.edit.undo,persp.hideToolbarSC:org.eclipse.ui.edit.redo,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,persp.hideToolbarSC:org.eclipse.jdt.ui.actions.OpenProjectWizard,persp.hideToolbarSC:ilg.gnuarmeclipse.packs.commands.showPerspectiveCommand,persp.hideToolbarSC:org.eclipse.tm.terminal.view.ui.commands.launchToolbar,persp.actionSet:org.eclipse.cdt.ui.buildConfigActionSet,"/>
           <tags>persp.actionSet:com.xilinx.ide.debug.ui.launchActionSet</tags>
@@ -39,10 +39,10 @@
           <tags>persp.newWizSC:com.xilinx.sdx.npw.revisedLibraryWizard</tags>
           <tags>persp.newWizSC:com.xilinx.sdx.npw.revisedKernelWizard</tags>
           <tags>persp.newWizSC:com.xilinx.sdx.npw.revisedPlatformWizard</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_6VL4EXnQEeyE2Y3jtFBuzA" selectedElement="_6VL4EnnQEeyE2Y3jtFBuzA" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_6VL4EXnQEeyE2Y3jtFBuzA" selectedElement="_6VL4F3nQEeyE2Y3jtFBuzA" horizontal="true">
             <children xsi:type="basic:PartSashContainer" xmi:id="_6VL4EnnQEeyE2Y3jtFBuzA" containerData="2500" selectedElement="_6VL4E3nQEeyE2Y3jtFBuzA">
               <children xsi:type="basic:PartStack" xmi:id="_6VL4E3nQEeyE2Y3jtFBuzA" elementId="com.xilinx.ide.projectExplorerMStack" containerData="6792" selectedElement="_6VL4FHnQEeyE2Y3jtFBuzA">
-                <tags>noFocus</tags>
+                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_6VL4FHnQEeyE2Y3jtFBuzA" elementId="com.xilinx.ide.projectExplorer" ref="_6U0EoHnQEeyE2Y3jtFBuzA" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:Xilinx</tags>
@@ -66,7 +66,7 @@
                 </children>
               </children>
               <children xsi:type="basic:PartSashContainer" xmi:id="_6VL4HHnQEeyE2Y3jtFBuzA" containerData="3853" selectedElement="_6VL4HXnQEeyE2Y3jtFBuzA" horizontal="true">
-                <children xsi:type="basic:PartStack" xmi:id="_6VL4HXnQEeyE2Y3jtFBuzA" elementId="org.eclipse.ui.console.ConsoleViewMStack" containerData="6000" selectedElement="_6VL4HnnQEeyE2Y3jtFBuzA">
+                <children xsi:type="basic:PartStack" xmi:id="_6VL4HXnQEeyE2Y3jtFBuzA" elementId="org.eclipse.ui.console.ConsoleViewMStack" containerData="6000" selectedElement="_6VL4H3nQEeyE2Y3jtFBuzA">
                   <children xsi:type="advanced:Placeholder" xmi:id="_6VL4HnnQEeyE2Y3jtFBuzA" elementId="org.eclipse.ui.console.ConsoleView" ref="_6U49IHnQEeyE2Y3jtFBuzA" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:General</tags>
@@ -99,7 +99,7 @@
           </children>
         </children>
         <children xsi:type="advanced:Perspective" xmi:id="_6VrnUHnQEeyE2Y3jtFBuzA" elementId="org.eclipse.debug.ui.DebugPerspective" selectedElement="_6VrnUXnQEeyE2Y3jtFBuzA" label="Debug">
-          <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:print,persp.hideToolbarSC:org.eclipse.ui.edit.undo,persp.hideToolbarSC:org.eclipse.ui.edit.redo,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,persp.hideToolbarSC:org.eclipse.jdt.ui.actions.OpenProjectWizard,persp.hideToolbarSC:org.eclipse.e4.ui.importer.openDirectory.menu,"/>
+          <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:print,persp.hideToolbarSC:org.eclipse.ui.edit.undo,persp.hideToolbarSC:org.eclipse.ui.edit.redo,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,persp.hideToolbarSC:org.eclipse.jdt.ui.actions.OpenProjectWizard,persp.hideToolbarSC:org.eclipse.e4.ui.importer.openDirectory.menu,persp.actionSet:org.eclipse.cdt.ui.buildConfigActionSet,"/>
           <tags>persp.actionSet:com.xilinx.ide.debug.ui.launchActionSet</tags>
           <tags>persp.actionSet:org.eclipse.ide.search.searchActionSet</tags>
           <tags>persp.actionSet:org.eclipse.ui.cheatsheets.actionSet</tags>
@@ -157,8 +157,8 @@
           <tags>persp.newWizSC:com.xilinx.sdx.npw.revisedPlatformWizard</tags>
           <tags>persp.viewSC:com.xilinx.sdx.aie.debug.ui.pipeline.PipeLineView</tags>
           <tags>persp.viewSC:com.xilinx.sdx.aie.debug.ui.statistics.AIEStatisticsView</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_6VrnUXnQEeyE2Y3jtFBuzA" selectedElement="_6VrnX3nQEeyE2Y3jtFBuzA" horizontal="true">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_6VrnUnnQEeyE2Y3jtFBuzA" containerData="2500" selectedElement="_6VrnXHnQEeyE2Y3jtFBuzA">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_6VrnUXnQEeyE2Y3jtFBuzA" selectedElement="_6VrnUnnQEeyE2Y3jtFBuzA" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_6VrnUnnQEeyE2Y3jtFBuzA" containerData="2500" selectedElement="_6VrnU3nQEeyE2Y3jtFBuzA">
               <children xsi:type="basic:PartSashContainer" xmi:id="_6VrnU3nQEeyE2Y3jtFBuzA" containerData="6000" selectedElement="_6VrnVHnQEeyE2Y3jtFBuzA" horizontal="true">
                 <children xsi:type="basic:PartStack" xmi:id="_6VrnVHnQEeyE2Y3jtFBuzA" elementId="org.eclipse.debug.internal.ui.NavigatorFolderView" containerData="5000" selectedElement="_6VrnVXnQEeyE2Y3jtFBuzA">
                   <tags>org.eclipse.e4.primaryNavigationStack</tags>
@@ -212,7 +212,7 @@
                     </children>
                   </children>
                 </children>
-                <children xsi:type="basic:PartSashContainer" xmi:id="_6VrnZXnQEeyE2Y3jtFBuzA" containerData="3500">
+                <children xsi:type="basic:PartSashContainer" xmi:id="_6VrnZXnQEeyE2Y3jtFBuzA" containerData="3500" selectedElement="_6Vrnc3nQEeyE2Y3jtFBuzA">
                   <children xsi:type="basic:PartStack" xmi:id="_6VrnZnnQEeyE2Y3jtFBuzA" elementId="org.eclipse.debug.internal.ui.OutlineFolderView" containerData="5000" selectedElement="_6VrnZ3nQEeyE2Y3jtFBuzA">
                     <tags>org.eclipse.e4.secondaryNavigationStack</tags>
                     <children xsi:type="advanced:Placeholder" xmi:id="_6VrnZ3nQEeyE2Y3jtFBuzA" elementId="org.eclipse.debug.ui.VariableView" ref="_6VQwkXnQEeyE2Y3jtFBuzA" closeable="true">
@@ -389,13 +389,6 @@
       <children xsi:type="basic:PartStack" xmi:id="_6UetcXnQEeyE2Y3jtFBuzA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_xw4wMHnaEeyE2Y3jtFBuzA">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <tags>active</tags>
-        <children xsi:type="basic:Part" xmi:id="_yOWeYHnREeyE2Y3jtFBuzA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="neural_network_platform" iconURI="platform:/plugin/com.xilinx.sdx.scw/icons/ide_16.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.xilinx.sdx.scw.ui.editor.ScwEditor&quot; name=&quot;platform.spr&quot; partName=&quot;neural_network_platform&quot; title=&quot;neural_network_platform&quot; tooltip=&quot;neural_network_platform/platform.spr&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/neural_network_platform/platform.spr&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>com.xilinx.sdx.scw.ui.editor.ScwEditor</tags>
-        </children>
         <children xsi:type="basic:Part" xmi:id="_fRqRQHnZEeyE2Y3jtFBuzA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="design_1_wrapper.xsa" iconURI="platform:/plugin/com.xilinx.sdx.scw/icons/hwspec_small.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.xilinx.sdx.scw.ui.editor.HwSpecEditor&quot; name=&quot;design_1_wrapper.xsa&quot; partName=&quot;design_1_wrapper.xsa&quot; title=&quot;design_1_wrapper.xsa&quot; tooltip=&quot;neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/neural_network_platform/export/neural_network_platform/hw/design_1_wrapper.xsa&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
@@ -415,12 +408,10 @@
           <tags>com.xilinx.sdx.ui.settingseditor</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_xw4wMHnaEeyE2Y3jtFBuzA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="feedforward_firmware.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;feedforward_firmware.c&quot; partName=&quot;feedforward_firmware.c&quot; title=&quot;feedforward_firmware.c&quot; tooltip=&quot;neural_network_application/src/feedforward_firmware.c&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/neural_network_application/src/feedforward_firmware.c&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;214&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;feedforward_firmware.c&quot; partName=&quot;feedforward_firmware.c&quot; title=&quot;feedforward_firmware.c&quot; tooltip=&quot;neural_network_application/src/feedforward_firmware.c&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/neural_network_application/src/feedforward_firmware.c&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1973&quot; selectionTopPixel=&quot;969&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_EsNYcHngEeyE2Y3jtFBuzA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="platform.h" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;platform.h&quot; partName=&quot;platform.h&quot; title=&quot;platform.h&quot; tooltip=&quot;neural_network_application/src/platform.h&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/neural_network_application/src/platform.h&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1738&quot; selectionTopPixel=&quot;172&quot;/>&#xA;&lt;/editor>"/>
@@ -440,6 +431,24 @@
           <tags>removeOnHide</tags>
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
         </children>
+        <children xsi:type="basic:Part" xmi:id="_FvkhgIBEEeylCKZHYf5b_Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="val_labels.h" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;val_labels.h&quot; partName=&quot;val_labels.h&quot; title=&quot;val_labels.h&quot; tooltip=&quot;neural_network_application/src/val_labels.h&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/neural_network_application/src/val_labels.h&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>removeOnHide</tags>
+          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_4lV6oIDtEeygBI6hxaGqng" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="xtmrctr.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;xtmrctr.c&quot; partName=&quot;xtmrctr.c&quot; title=&quot;xtmrctr.c&quot; tooltip=&quot;neural_network_platform/ps7_cortexa9_0/standalone_domain/bsp/ps7_cortexa9_0/libsrc/tmrctr_v4_7/src/xtmrctr.c&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/neural_network_platform/ps7_cortexa9_0/standalone_domain/bsp/ps7_cortexa9_0/libsrc/tmrctr_v4_7/src/xtmrctr.c&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;16&quot; selectionOffset=&quot;11684&quot; selectionTopPixel=&quot;5507&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>removeOnHide</tags>
+          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_sXz6EIEqEeyDQJAaDwAZpg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="xparameters.h" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;xparameters.h&quot; partName=&quot;xparameters.h&quot; title=&quot;xparameters.h&quot; tooltip=&quot;neural_network_platform/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/include/xparameters.h&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/neural_network_platform/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/include/xparameters.h&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;15663&quot; selectionTopPixel=&quot;7701&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>removeOnHide</tags>
+          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
+        </children>
       </children>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_6U0EoHnQEeyE2Y3jtFBuzA" elementId="com.xilinx.ide.projectExplorer" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Explorer" iconURI="platform:/plugin/com.xilinx.ide.application.ui/icons/project_explorer.png" tooltip="" closeable="true">
@@ -448,6 +457,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;1&quot; org.eclipse.cdt.ui.cview.groupincludes=&quot;false&quot; org.eclipse.cdt.ui.cview.groupmacros=&quot;false&quot; org.eclipse.cdt.ui.editor.CUChildren=&quot;true&quot;>&#xA;&lt;lastRecentlyUsedFilters/>&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:Xilinx</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_6lou4HnQEeyE2Y3jtFBuzA" elementId="com.xilinx.ide.projectExplorer">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -455,12 +466,27 @@
       <menus xsi:type="menu:PopupMenu" xmi:id="_79hu4HnQEeyE2Y3jtFBuzA" elementId="com.xilinx.ide.projectExplorer#PopupMenu">
         <tags>menuContribution:popup</tags>
       </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_ghVwUIBDEeylCKZHYf5b_Q" elementId="com.xilinx.ide.projectExplorer#PopupMenu">
+        <tags>menuContribution:popup</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_fObr0IDkEeyl4fnOldoeqA" elementId="com.xilinx.ide.projectExplorer#PopupMenu">
+        <tags>menuContribution:popup</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_r7MDkIDqEeygBI6hxaGqng" elementId="com.xilinx.ide.projectExplorer#PopupMenu">
+        <tags>menuContribution:popup</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_Us_8gIEoEeyDQJAaDwAZpg" elementId="com.xilinx.ide.projectExplorer#PopupMenu">
+        <tags>menuContribution:popup</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_jjoAIIK1Eeys_rIkSQ-1DA" elementId="com.xilinx.ide.projectExplorer#PopupMenu">
+        <tags>menuContribution:popup</tags>
+      </menus>
       <toolbar xmi:id="_6lpV8HnQEeyE2Y3jtFBuzA" elementId="com.xilinx.ide.projectExplorer"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_6U4WEHnQEeyE2Y3jtFBuzA" elementId="com.xilinx.sdx.assistant.assistantView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Assistant" iconURI="platform:/plugin/com.xilinx.sdx.assistant/icons/assistant_view.png" tooltip="Assistant to manage Scout project setup, builds, and reports." closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="com.xilinx.sdx.assistant.view.SDXAssistantView"/>
       <persistedState key="originalCompatibilityViewBundle" value="com.xilinx.sdx.assistant"/>
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view AssistantView.EXPANSION=&quot;neural_network_application_system&quot;/>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view AssistantView.EXPANSION=&quot;neural_network_application_system,neural_network_application_system/neural_network_application&quot;/>"/>
       <tags>View</tags>
       <tags>categoryTag:Xilinx</tags>
       <menus xmi:id="_7lUqQHnQEeyE2Y3jtFBuzA" elementId="com.xilinx.sdx.assistant.assistantView">
@@ -475,16 +501,17 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>highlighted</tags>
       <menus xmi:id="_7q3RkHnQEeyE2Y3jtFBuzA" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_7q3RkXnQEeyE2Y3jtFBuzA" elementId="org.eclipse.ui.console.ConsoleView"/>
+      <toolbar xmi:id="_7q3RkXnQEeyE2Y3jtFBuzA" elementId="org.eclipse.ui.console.ConsoleView" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_6U6LQHnQEeyE2Y3jtFBuzA" elementId="org.eclipse.ui.views.ProblemView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Problems" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/problems_view.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.internal.views.markers.ProblemsView"/>
       <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.ui.ide"/>
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot; categoryGroup=&quot;org.eclipse.ui.ide.severity&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.problemsGenerator&quot; partName=&quot;Problems&quot;>&#xA;&lt;expanded>&#xA;&lt;category IMemento.internal.id=&quot;Infos (3 items)&quot;/>&#xA;&lt;/expanded>&#xA;&lt;columnWidths org.eclipse.ui.ide.locationField=&quot;105&quot; org.eclipse.ui.ide.markerType=&quot;105&quot; org.eclipse.ui.ide.pathField=&quot;140&quot; org.eclipse.ui.ide.resourceField=&quot;105&quot; org.eclipse.ui.ide.severityAndDescriptionField=&quot;350&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xA;&lt;/view>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot; categoryGroup=&quot;org.eclipse.ui.ide.severity&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.problemsGenerator&quot; partName=&quot;Problems&quot;>&#xA;&lt;columnWidths org.eclipse.ui.ide.locationField=&quot;105&quot; org.eclipse.ui.ide.markerType=&quot;671&quot; org.eclipse.ui.ide.pathField=&quot;140&quot; org.eclipse.ui.ide.resourceField=&quot;105&quot; org.eclipse.ui.ide.severityAndDescriptionField=&quot;752&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
       <menus xmi:id="_8XXLMHnQEeyE2Y3jtFBuzA" elementId="org.eclipse.ui.views.ProblemView">
@@ -902,8 +929,25 @@
         <tags>TrimStack</tags>
         <tags>Draggable</tags>
       </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_Nv2pMIDxEeygBI6hxaGqng" elementId="com.xilinx.ide.projectExplorerMStack(IDEWindow).(com.xilinx.ide.application.ui.perspectve)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+        <tags>Draggable</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_NwJkIIDxEeygBI6hxaGqng" elementId="com.xilinx.sdx.assistant.assistantViewMStack(IDEWindow).(com.xilinx.ide.application.ui.perspectve)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+        <tags>Draggable</tags>
+      </children>
     </trimBars>
-    <trimBars xmi:id="_5o3kp3nQEeyE2Y3jtFBuzA" elementId="org.eclipse.ui.trim.vertical2" contributorURI="platform:/plugin/org.eclipse.ui.workbench" side="Right"/>
+    <trimBars xmi:id="_5o3kp3nQEeyE2Y3jtFBuzA" elementId="org.eclipse.ui.trim.vertical2" contributorURI="platform:/plugin/org.eclipse.ui.workbench" toBeRendered="false" side="Right">
+      <children xsi:type="menu:ToolControl" xmi:id="_NwVxYIDxEeygBI6hxaGqng" elementId="org.eclipse.ui.views.ContentOutlineMStack(IDEWindow).(com.xilinx.ide.application.ui.perspectve)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+        <tags>Draggable</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_NwcfEIDxEeygBI6hxaGqng" elementId="org.eclipse.ui.editorss(IDEWindow).(com.xilinx.ide.application.ui.perspectve)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+        <tags>Draggable</tags>
+      </children>
+    </trimBars>
   </children>
   <bindingTables xmi:id="_5o3kqHnQEeyE2Y3jtFBuzA" contributorURI="platform:/plugin/org.eclipse.ui.workbench" bindingContext="_5o3kqXnQEeyE2Y3jtFBuzA">
     <bindings xmi:id="_5qTvE3nQEeyE2Y3jtFBuzA" keySequence="ALT+CTRL+SHIFT+P" command="_5pkvW3nQEeyE2Y3jtFBuzA"/>
@@ -3449,9 +3493,14 @@
   <addons xmi:id="_5o3ktXnQEeyE2Y3jtFBuzA" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_5o3ktnnQEeyE2Y3jtFBuzA" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_5pFAAHnQEeyE2Y3jtFBuzA" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_H-fQIIK1Eeys_rIkSQ-1DA" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <addons xmi:id="_5rcXgHnQEeyE2Y3jtFBuzA" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
+  <addons xmi:id="_TP0P4IBDEeylCKZHYf5b_Q" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
+  <addons xmi:id="_S7i94IDkEeyl4fnOldoeqA" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
+  <addons xmi:id="_5D1KQIDpEeygBI6hxaGqng" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
+  <addons xmi:id="_NEmAsYEoEeyDQJAaDwAZpg" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
+  <addons xmi:id="_H_y3sIK1Eeys_rIkSQ-1DA" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <categories xmi:id="_5pgd0HnQEeyE2Y3jtFBuzA" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_5pgd0XnQEeyE2Y3jtFBuzA" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
   <categories xmi:id="_5pgd0nnQEeyE2Y3jtFBuzA" elementId="org.eclipse.ui.category.edit" name="Edit"/>

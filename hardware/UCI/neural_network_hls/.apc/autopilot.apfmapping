@@ -5,6 +5,7 @@
   </source>
   <testbench>
     <originFiles name="main.cpp" path="/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_hls/main.cpp"/>
+    <originFiles name="expected_result2.txt" path="/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_hls/expected_result2.txt"/>
     <originFiles name="expected_result.txt" path="/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_hls/expected_result.txt"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

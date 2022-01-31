@@ -536,7 +536,7 @@ begin
         write_start_run_flag <= '0'; 
         write_start_count := 0;
     elsif (clk'event and clk = '1') then
-        if (write_start_count >= 17) then
+        if (write_start_count >= 1167) then
             write_start_run_flag <= '0'; 
         elsif (TRAN_CTRL_BUS_write_start_in = '1') then
             write_start_run_flag <= '1'; 

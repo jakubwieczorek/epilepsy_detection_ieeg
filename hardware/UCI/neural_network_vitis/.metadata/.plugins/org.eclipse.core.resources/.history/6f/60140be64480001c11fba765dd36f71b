@@ -1,0 +1,84 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include <xfeedforward.h>
+#include "sample.h"
+#include"val_data.h"
+#include"val_labels.h"
+
+XFeedforward xFeedforward;
+XFeedforward_Config *xFeedforward_cfg;
+
+float *xBRAM = (float *)0x40000000;
+float *yBRAM = (float *)0x42000000;
+
+float bin_accuracy(float val_predicted[], float val_expected[], int size) {
+	float sum = 0;
+
+	for(int i = 0; i < size; i++) {
+					val_predicted[i] = val_predicted[i] > 0.5;
+					sum += val_predicted[i] == val_expected[i];
+	}
+
+	return sum/size;
+}
+
+
+void init_Feedforward() {
+	int status=0;
+	xFeedforward_cfg = XFeedforward_LookupConfig(XPAR_FEEDFORWARD_0_DEVICE_ID);
+	if (xFeedforward_cfg) {
+		status = XFeedforward_CfgInitialize(&xFeedforward, xFeedforward_cfg);
+		if (status != XST_SUCCESS) {printf("Failed to initialize xFeedforward\n");}
+		else {printf("Successfully initialized xFeedforward\n");}
+	}
+}
+
+void init_data(int signal) {
+	for(int i=0; i<178; i++) {
+		xBRAM[i] = dataset[signal][i];
+	}
+}
+
+void init_data2(int signal) {
+	for(int i=0; i<178; i++) {
+		xBRAM[i] = val_data[signal][i];
+	}
+}
+
+int test2() {
+	float y[2] = {0};
+    float val_predicted[1149] = {0};
+
+	for(int i = 0; i<1149; i++) {
+		init_data2(i);
+		XFeedforward_Start(&xFeedforward);
+		while(!XFeedforward_IsDone(&xFeedforward));
+		printf("%d: expected: %d, actual %f\n", i, val_labels[i], yBRAM[0]);
+		val_predicted[i] = yBRAM[0];
+	}
+
+	float accuracy = bin_accuracy(val_predicted, val_labels, 1149);
+
+	printf("Accuracy %f\n", accuracy);
+
+	return 0;
+}
+
+
+int main(void) {
+	printf("Feedforward test for EEG signals\n");
+	printf("START init_Feedforward\n");
+	init_Feedforward();
+
+	for(int i=0; i<17; i++) {
+		init_data(i);
+		XFeedforward_Start(&xFeedforward);
+		while(!XFeedforward_IsDone(&xFeedforward));
+		printf("%d: expected: %d, actual %f\n", i, expected[i], yBRAM[0]);
+	}
+
+	test2();
+
+    return 0;
+}

@@ -1,5 +1,5 @@
 INFO: [HLS 200-10] Running '/home/jakub/apps/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
-INFO: [HLS 200-10] For user 'jakub' on host 'jakub-Lenovo-G50-80' (Linux_x86_64 version 5.11.0-46-generic) on Tue Jan 19 21:39:04 CET 2021
+INFO: [HLS 200-10] For user 'jakub' on host 'jakub-Lenovo-G50-80' (Linux_x86_64 version 5.13.0-27-generic) on Thu Jan 28 23:06:38 CET 2021
 INFO: [HLS 200-10] On os Ubuntu 20.04.3 LTS
 INFO: [HLS 200-10] In directory '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI'
 Sourcing Tcl script '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_hls/solution1/export.tcl'
@@ -8,10 +8,12 @@ INFO: [HLS 200-10] Opening project '/home/jakub/Documents/PyCharmProjects/epilep
 INFO: [HLS 200-1510] Running: set_top feedforward 
 INFO: [HLS 200-1510] Running: add_files neural_network_hls/feedforward.cpp 
 INFO: [HLS 200-10] Adding design file 'neural_network_hls/feedforward.cpp' to the project
-INFO: [HLS 200-1510] Running: add_files -tb neural_network_hls/main.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
-INFO: [HLS 200-10] Adding test bench file 'neural_network_hls/main.cpp' to the project
-INFO: [HLS 200-1510] Running: add_files -tb neural_network_hls/expected_result.txt -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-1510] Running: add_files -tb neural_network_hls/expected_result.txt -cflags -Wno-unknown-pragmas 
 INFO: [HLS 200-10] Adding test bench file 'neural_network_hls/expected_result.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb neural_network_hls/expected_result2.txt 
+INFO: [HLS 200-10] Adding test bench file 'neural_network_hls/expected_result2.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb neural_network_hls/main.cpp -cflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'neural_network_hls/main.cpp' to the project
 INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
 INFO: [HLS 200-10] Opening solution '/home/jakub/Documents/PyCharmProjects/epilepsy_detection_ieeg/hardware/UCI/neural_network_hls/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
@@ -39,7 +41,6 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/jakub/apps/Xilinx/Vivado/2020.2/data/ip'.
 WARNING: [IP_Flow 19-4832] The IP name 'feedforward_ap_fadd_3_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-create_ip: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2253.402 ; gain = 43.016 ; free physical = 624 ; free virtual = 8972
 INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'feedforward_ap_fadd_3_full_dsp_32'...
 INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'feedforward_ap_fadd_3_full_dsp_32'...
 WARNING: [IP_Flow 19-4832] The IP name 'feedforward_ap_fcmp_0_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
@@ -57,6 +58,6 @@ INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'feedforward_ap_fm
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/jakub/apps/Xilinx/Vivado/2020.2/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Tue Jan 19 21:39:51 2021...
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 28 23:07:15 2021...
 INFO: [HLS 200-802] Generated output file neural_network_hls/solution1/impl/export.zip
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 40.66 seconds. CPU system time: 2.71 seconds. Elapsed time: 46.32 seconds; current allocated memory: 95.436 MB.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 36.77 seconds. CPU system time: 2.28 seconds. Elapsed time: 37.82 seconds; current allocated memory: 95.479 MB.

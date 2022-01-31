@@ -677,7 +677,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>67d04ba7</spirit:value>
+            <spirit:value>9ab64413</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -696,7 +696,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>a4dce748</spirit:value>
+            <spirit:value>b5768ae7</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -715,7 +715,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>581a5545</spirit:value>
+            <spirit:value>d1df8956</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -734,7 +734,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>f6ca596a</spirit:value>
+            <spirit:value>81ae7653</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1601,7 +1601,7 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/feedforward.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_cbfe77f2</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_993fab77</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1816,8 +1816,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Feedforward</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2101192139</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2021-01-19T20:39:51Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2101282306</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2021-01-28T22:07:15Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -1827,7 +1827,7 @@
       <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="941f8a9b"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ca49a910"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="c8e75172"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="5b79a39c"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="11d78ad7"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="bb5efbe5"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="a2696649"/>

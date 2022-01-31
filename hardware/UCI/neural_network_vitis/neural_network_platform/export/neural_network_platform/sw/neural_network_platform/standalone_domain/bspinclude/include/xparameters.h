@@ -453,6 +453,26 @@
 
 /******************************************************************/
 
+/* Definitions for driver TMRCTR */
+#define XPAR_XTMRCTR_NUM_INSTANCES 1U
+
+/* Definitions for peripheral AXI_TIMER_0 */
+#define XPAR_AXI_TIMER_0_DEVICE_ID 0U
+#define XPAR_AXI_TIMER_0_BASEADDR 0x41C00000U
+#define XPAR_AXI_TIMER_0_HIGHADDR 0x41C0FFFFU
+#define XPAR_AXI_TIMER_0_CLOCK_FREQ_HZ 100000000U
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral AXI_TIMER_0 */
+#define XPAR_TMRCTR_0_DEVICE_ID 0U
+#define XPAR_TMRCTR_0_BASEADDR 0x41C00000U
+#define XPAR_TMRCTR_0_HIGHADDR 0x41C0FFFFU
+#define XPAR_TMRCTR_0_CLOCK_FREQ_HZ XPAR_AXI_TIMER_0_CLOCK_FREQ_HZ
+
+/******************************************************************/
+
 /* Definitions for driver UARTPS */
 #define XPAR_XUARTPS_NUM_INSTANCES 1
 

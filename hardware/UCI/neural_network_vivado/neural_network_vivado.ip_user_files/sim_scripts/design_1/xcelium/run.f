@@ -16,9 +16,6 @@
 -makelib xcelium_lib/xpm \
   "/home/jakub/apps/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_1/sim/design_1.vhd" \
--endlib
 -makelib xcelium_lib/axi_infrastructure_v1_1_0 \
   "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" \
 -endlib
@@ -92,25 +89,25 @@
   "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/b0c0/hdl/floating_point_v7_1_rfs.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/vhdl/feedforward_b1.vhd" \
-  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/vhdl/feedforward_CTRL_BUS_s_axi.vhd" \
-  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/vhdl/feedforward_fadd_32ns_32ns_32_5_full_dsp_1.vhd" \
-  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/vhdl/feedforward_fcmp_32ns_32ns_1_2_no_dsp_1.vhd" \
-  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/vhdl/feedforward_fdiv_32ns_32ns_32_16_no_dsp_1.vhd" \
-  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/vhdl/feedforward_fexp_32ns_32ns_32_9_full_dsp_1.vhd" \
-  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/vhdl/feedforward_fmul_32ns_32ns_32_4_max_dsp_1.vhd" \
-  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/vhdl/feedforward_l1y.vhd" \
-  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/vhdl/feedforward_w1.vhd" \
-  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/vhdl/feedforward_w2_0.vhd" \
-  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/vhdl/feedforward_wy_sum.vhd" \
-  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/vhdl/feedforward.vhd" \
+  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/96f8/hdl/vhdl/feedforward_b1.vhd" \
+  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/96f8/hdl/vhdl/feedforward_CTRL_BUS_s_axi.vhd" \
+  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/96f8/hdl/vhdl/feedforward_fadd_32ns_32ns_32_5_full_dsp_1.vhd" \
+  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/96f8/hdl/vhdl/feedforward_fcmp_32ns_32ns_1_2_no_dsp_1.vhd" \
+  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/96f8/hdl/vhdl/feedforward_fdiv_32ns_32ns_32_16_no_dsp_1.vhd" \
+  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/96f8/hdl/vhdl/feedforward_fexp_32ns_32ns_32_9_full_dsp_1.vhd" \
+  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/96f8/hdl/vhdl/feedforward_fmul_32ns_32ns_32_4_max_dsp_1.vhd" \
+  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/96f8/hdl/vhdl/feedforward_l1y.vhd" \
+  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/96f8/hdl/vhdl/feedforward_w1.vhd" \
+  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/96f8/hdl/vhdl/feedforward_w2_0.vhd" \
+  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/96f8/hdl/vhdl/feedforward_wy_sum.vhd" \
+  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/96f8/hdl/vhdl/feedforward.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/ip/feedforward_ap_fadd_3_full_dsp_32.v" \
-  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/ip/feedforward_ap_fexp_7_full_dsp_32.v" \
-  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/ip/feedforward_ap_fdiv_14_no_dsp_32.v" \
-  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/ip/feedforward_ap_fmul_2_max_dsp_32.v" \
-  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/e912/hdl/ip/feedforward_ap_fcmp_0_no_dsp_32.v" \
+  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/96f8/hdl/ip/feedforward_ap_fadd_3_full_dsp_32.v" \
+  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/96f8/hdl/ip/feedforward_ap_fexp_7_full_dsp_32.v" \
+  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/96f8/hdl/ip/feedforward_ap_fdiv_14_no_dsp_32.v" \
+  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/96f8/hdl/ip/feedforward_ap_fmul_2_max_dsp_32.v" \
+  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/96f8/hdl/ip/feedforward_ap_fcmp_0_no_dsp_32.v" \
   "../../../bd/design_1/ip/design_1_feedforward_0_0/sim/design_1_feedforward_0_0.v" \
   "../../../bd/design_1/ip/design_1_blk_mem_gen_0_1/sim/design_1_blk_mem_gen_0_1.v" \
 -endlib
@@ -129,13 +126,27 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
+  "../../../bd/design_1/sim/design_1.vhd" \
+-endlib
+-makelib xcelium_lib/axi_lite_ipif_v3_0_4 \
+  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/lib_pkg_v1_0_2 \
+  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/0513/hdl/lib_pkg_v1_0_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/axi_timer_v2_0_24 \
+  "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/70d6/hdl/axi_timer_v2_0_vh_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_axi_timer_0_0_1/sim/design_1_axi_timer_0_0.vhd" \
 -endlib
 -makelib xcelium_lib/axi_protocol_converter_v2_1_22 \
   "../../../../neural_network_vivado.gen/sources_1/bd/design_1/ipshared/5cee/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_auto_pc_1/sim/design_1_auto_pc_1.v" \
+  "../../../bd/design_1/ip/design_1_auto_pc_2/sim/design_1_auto_pc_2.v" \
   "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+  "../../../bd/design_1/ip/design_1_auto_pc_1/sim/design_1_auto_pc_1.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

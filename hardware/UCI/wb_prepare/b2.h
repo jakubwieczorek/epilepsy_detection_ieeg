@@ -1,4 +1,4 @@
 #include "feedforward.h"
 
-fp_type_t b2[] = {-0.534799, 
+fp_type_t b2[] = {-0.592766, 
 };

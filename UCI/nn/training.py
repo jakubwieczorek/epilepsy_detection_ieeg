@@ -60,6 +60,31 @@ class FeedForward:
         self.val_data = self.data[val_idx]
         self.val_labels = self.data_labels[val_idx]
 
+    def dumpData(self, a_path):
+        with open(a_path + '/val_data.csv', "w") as f:
+            writer = csv.writer(f)
+            writer.writerows(self.val_data)
+
+        with open(a_path + '/val_labels.csv', "w") as f:
+            writer = csv.writer(f)
+            writer.writerows(self.val_labels)
+
+        with open(a_path + '/test_data.csv', "w") as f:
+            writer = csv.writer(f)
+            writer.writerows(self.test_data)
+
+        with open(a_path + '/test_labels.csv', "w") as f:
+            writer = csv.writer(f)
+            writer.writerows(self.test_labels)
+
+        with open(a_path + '/train_data.csv', "w") as f:
+            writer = csv.writer(f)
+            writer.writerows(self.train_data)
+
+        with open(a_path + '/train_labels.csv', "w") as f:
+            writer = csv.writer(f)
+            writer.writerows(self.train_labels)
+
     def createModel(self, n):
         self.model = keras.Sequential([  # layers in sequence
             keras.layers.Dense(n, activation="relu",
@@ -170,12 +195,14 @@ def train_raw():
     val_accuracies = []
     val_losses = []
 
-    for i in range(10, 200):  # 10 to 200 nodes
+    for i in range(72, 73):  # 10 to 200 nodes
+        cur_result_dir = result_dir.format(neurons=i)
+
         nn.createModel(i)
+        nn.dumpData(cur_result_dir)
         nn.trainModel(300)  # 300 epochs
 
         # save the history and model
-        cur_result_dir = result_dir.format(neurons=i)
         nn.saveModel(cur_result_dir)
         json.dump(nn.history.history, open(cur_result_dir + "history.json", 'w'))
         json.dump(nn.history.params, open(cur_result_dir + "params.json", 'w'))
@@ -195,10 +222,10 @@ def train_raw():
     val_losses = sorted(val_losses, key=lambda x: x[1])
     val_accuracies = sorted(val_accuracies, key=lambda x: x[1], reverse=True)
 
-    with open(best_result_dir, "w") as f:
-        writer = csv.writer(f)
-        writer.writerow(["accuracy", "loss", "val_accuracy", "val_loss"])
-        writer.writerows(zip(accuracies, losses, val_accuracies, val_losses))
+    # with open(best_result_dir, "w") as f:
+    #     writer = csv.writer(f)
+    #     writer.writerow(["accuracy", "loss", "val_accuracy", "val_loss"])
+    #     writer.writerows(zip(accuracies, losses, val_accuracies, val_losses))
 
 
 def train_ar():
@@ -214,10 +241,12 @@ def train_ar():
     val_accuracies = []
     val_losses = []
 
-    for i in range(1, 200):
-        nn.createModel(i)
-        nn.trainModel(100)
+    for i in range(16, 17):
         cur_result_dir = result_dir.format(neurons=i)
+
+        nn.createModel(i)
+        nn.dumpData(cur_result_dir)
+        nn.trainModel(100)
         nn.saveModel(cur_result_dir)
 
         json.dump(nn.history.history, open(cur_result_dir + "history.json", 'w'))
@@ -234,17 +263,16 @@ def train_ar():
     val_losses = sorted(val_losses, key=lambda x: x[1])
     val_accuracies = sorted(val_accuracies, key=lambda x: x[1], reverse=True)
 
-    with open(best_result_dir, "w") as f:
-        writer = csv.writer(f)
-        writer.writerow(["accuracy", "loss", "val_accuracy", "val_loss"])
-        writer.writerows(zip(accuracies, losses, val_accuracies, val_losses))
+    # with open(best_result_dir, "w") as f:
+    #     writer = csv.writer(f)
+    #     writer.writerow(["accuracy", "loss", "val_accuracy", "val_loss"])
+    #     writer.writerows(zip(accuracies, losses, val_accuracies, val_losses))
 
 
 if __name__ == "__main__":
     # train_entropy(5)
     # train_entropy(40)
     # train_raw()
-    # train_ar()
+    train_ar()
     # nn.loadModel("./model")
     # nn.saveModel("./model")
-    pass
